@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.ExcelUtility;
 import utilities.PageUtility;
 
 public class NewsPage {
@@ -23,17 +24,22 @@ public class NewsPage {
 		 
 		}
         
-    public void newsnewbutton()
+    public void ManageNewsMoreInfo()
     {
     	   	
 		pageutility.click_on_element(pageutility_ManageNewsMoreInfo);
-    	pageutility.click_on_element(pageutility_newsnewbutton);
+    	//pageutility.click_on_element(pageutility_newsnewbutton);
     	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainings");
     	//pageutility.click_on_element(pageutility_newscreate);
     }
-    public void newsaddtestarea()
+    public void newsnewbutton()
     {
-    	pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainings");
+    	pageutility.click_on_element(pageutility_newsnewbutton);
+    }
+    public void newsaddtestarea(String addtestarea)
+    {
+    	pageutility.send_data_to_element(pageutility_newsaddtestarea, addtestarea);
+    	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainingsrtest");
     }
     public void newscreate()
     {

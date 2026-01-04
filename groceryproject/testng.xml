@@ -8,7 +8,7 @@
     <classes>
       <class name="com.demogrocery.app.AppTest"/>
       <class name="testscript.LoginTest"/>
-      
+      <class name="testscript.NewsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

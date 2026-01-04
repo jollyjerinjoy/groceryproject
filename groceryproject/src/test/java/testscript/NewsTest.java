@@ -9,6 +9,7 @@ import pages.LoginPage;
 import pages.NewsPage;
 import utilities.ExcelUtility;
 import utilities.PageUtility;
+import utilities.RandomUtility;
 
 public class NewsTest extends Base {
 	@Test(priority=1)
@@ -24,7 +25,11 @@ public class NewsTest extends Base {
 		loginpage.enterThePasword(passwd); //calling page methods, passvalue
 		loginpage.signin();
 		NewsPage newspage=new NewsPage(driver);
+		newspage.ManageNewsMoreInfo();
 		newspage.newsnewbutton();
+		String addtestarea=ExcelUtility.readStringData(0, 0, "NewsPage");
+		String uniqueNews=RandomUtility.getUniqueText(addtestarea);
+		newspage.newsaddtestarea(uniqueNews);
 		newspage.newscreate();
 		boolean alertpage=newspage.isAlertDisplayed();
 		Assert.assertTrue(alertpage, "News Created Successfully"); //hard assertion , classname.methodname
