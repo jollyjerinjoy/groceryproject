@@ -7,11 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.ExcelUtility;
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class NewsPage {
 	public WebDriver driver;
 	
 	PageUtility pageutility= new PageUtility();
+	WaitUtility waitutility= new WaitUtility();
+	
     @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']")WebElement pageutility_ManageNewsMoreInfo;
     @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement pageutility_newsnewbutton;
     @FindBy(xpath="//textarea[@name='news']")WebElement pageutility_newsaddtestarea;
@@ -23,10 +26,12 @@ public class NewsPage {
 		//to initialize webelements we use initElements.
 		 
 		}
-        
+       
+   
     public void ManageNewsMoreInfo()
     {
-    	   	
+       
+    	waitutility.waitForElementToBeClickable(driver, pageutility_ManageNewsMoreInfo);	
 		pageutility.click_on_element(pageutility_ManageNewsMoreInfo);
     	//pageutility.click_on_element(pageutility_newsnewbutton);
     	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainings");

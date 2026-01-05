@@ -30,6 +30,7 @@ public class NewsTest extends Base {
 		String addtestarea=ExcelUtility.readStringData(0, 0, "NewsPage");
 		String uniqueNews=RandomUtility.getUniqueText(addtestarea);
 		newspage.newsaddtestarea(uniqueNews);
+		
 		newspage.newscreate();
 		boolean alertpage=newspage.isAlertDisplayed();
 		Assert.assertTrue(alertpage, "News Created Successfully"); //hard assertion , classname.methodname

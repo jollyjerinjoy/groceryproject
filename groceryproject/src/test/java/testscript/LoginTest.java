@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import utilities.ExcelUtility;
+import utilities.FakerUtility;
 
 public class LoginTest extends Base {
 	@Test(priority=1)
@@ -23,6 +24,11 @@ public class LoginTest extends Base {
 		loginpage.signin();
 		boolean dashboardpage=loginpage.isHomePageDisplayed();
 		Assert.assertTrue(dashboardpage);  //hard assertion , classname.methodname
+		//FakerUtility fakerutility=new FakerUtility();
+		//String user=fakerutility.creatARandomFirstName();
+		//String passwd=fakerutility.creatARandomFirstName();
+		
+		
 	}
 	@Test(priority=2)
 	public void verifylogininvalidpassword() throws IOException
