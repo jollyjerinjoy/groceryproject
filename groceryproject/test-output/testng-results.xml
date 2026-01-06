@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-05T06:47:04 GMT" name="Default suite" finished-at="2026-01-05T06:47:13 GMT" duration-ms="8819">
+  <suite started-at="2026-01-06T05:29:47 GMT" name="Default suite" finished-at="2026-01-06T05:29:54 GMT" duration-ms="7768">
     <groups>
     </groups>
-    <test started-at="2026-01-05T06:47:04 GMT" name="Default test" finished-at="2026-01-05T06:47:13 GMT" duration-ms="8819">
-      <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.NewsTest@55141def]" started-at="2026-01-05T06:47:04 GMT" name="browserInitialization" finished-at="2026-01-05T06:47:08 GMT" duration-ms="3562" status="PASS">
+    <test started-at="2026-01-06T05:29:47 GMT" name="Default test" finished-at="2026-01-06T05:29:54 GMT" duration-ms="7768">
+      <class name="testscript.LogoutTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@55141def]" started-at="2026-01-06T05:29:47 GMT" name="browserInitialization" finished-at="2026-01-06T05:29:50 GMT" duration-ms="3619" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyNewsIsCreated()[pri:1, instance:testscript.NewsTest@55141def]" started-at="2026-01-05T06:47:08 GMT" name="verifyNewsIsCreated" finished-at="2026-01-05T06:47:13 GMT" duration-ms="5038" status="PASS">
+        <test-method signature="verifyloginout()[pri:1, instance:testscript.LogoutTest@55141def]" started-at="2026-01-06T05:29:50 GMT" name="verifyloginout" finished-at="2026-01-06T05:29:54 GMT" duration-ms="3920" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyNewsIsCreated -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:testscript.NewsTest@55141def]" started-at="2026-01-05T06:47:13 GMT" name="browserClose" finished-at="2026-01-05T06:47:13 GMT" duration-ms="168" status="PASS">
+        </test-method> <!-- verifyloginout -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:testscript.LogoutTest@55141def]" started-at="2026-01-06T05:29:54 GMT" name="browserClose" finished-at="2026-01-06T05:29:54 GMT" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-      </class> <!-- testscript.NewsTest -->
+      </class> <!-- testscript.LogoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
