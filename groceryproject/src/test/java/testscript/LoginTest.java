@@ -10,14 +10,14 @@ import utilities.ExcelUtility;
 import utilities.FakerUtility;
 
 public class LoginTest extends Base {
-	@Test(priority=1)
+	@Test(priority=1,groups= {"regression"},retryAnalyzer=retry.Retry.class)
 	public void verifyloginwithvalidcredentails() throws IOException
 	{
 	//	String user="admin"; //webelement, method in page class
 	//	String passwd="admin";
 		
 		String user=ExcelUtility.readStringData(1, 0, "LoginPage");   //readIntegerData(int row, int col, String sheet)
-		String passwd=ExcelUtility.readStringData(1, 1,"LoginPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
+		String passwd=ExcelUtility.readStringData(1, 8,"LoginPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
 		LoginPage loginpage=new LoginPage(driver);  //pass value driver 
 		loginpage.enterTheUsername(user);  //calling page methods, passvalue 
 		loginpage.enterThePasword(passwd); //calling page methods, passvalue

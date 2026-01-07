@@ -84,14 +84,15 @@ public class ContactPage {
 		//username.sendKeys(user);
 		pageutility.clear_element_data(pageutilty_ContactPageDCT);
 		pageutility.send_data_to_element(pageutilty_ContactPageDCT, DCT);
+		
 	}
 
 	public void ContactPageUpdate()
 	{
 		//pageutility.click_on_element(pageutilty_ContactPageUpdate);
 		pageutility.JSscrollToElement(pageutilty_ContactPageUpdate);
-		pageutility.click_on_element(pageutilty_ContactPageUpdate);
-		
+		//pageutility.click_on_element(pageutilty_ContactPageUpdate);
+		pageutility.clickByJS(pageutilty_ContactPageUpdate); //click by Js action.
 	}
 	public boolean isAlertDisplayed()
 	{
