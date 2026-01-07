@@ -17,7 +17,7 @@ public class LoginTest extends Base {
 	//	String passwd="admin";
 		
 		String user=ExcelUtility.readStringData(1, 0, "LoginPage");   //readIntegerData(int row, int col, String sheet)
-		String passwd=ExcelUtility.readStringData(1, 8,"LoginPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
+		String passwd=ExcelUtility.readStringData(1, 1,"LoginPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
 		LoginPage loginpage=new LoginPage(driver);  //pass value driver 
 		loginpage.enterTheUsername(user);  //calling page methods, passvalue 
 		loginpage.enterThePasword(passwd); //calling page methods, passvalue
