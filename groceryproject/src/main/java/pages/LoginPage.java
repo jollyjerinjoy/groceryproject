@@ -18,7 +18,7 @@ public class LoginPage {
 //page factory used to locate WebWlements , used "finbBy
 //WebElements and methods	
 	        public WebDriver driver;
-	        PageUtility pageutility= new PageUtility();
+	        PageUtility pageutility= new PageUtility(driver);
 	       // FileUploadUtility fileuploadutility =new FileUploadUtility();
 	        
 	    @FindBy(xpath="//input[@name='username']")WebElement username;

@@ -10,24 +10,20 @@ import org.openqa.selenium.support.ui.Select;
 public class PageUtility {
 	JavascriptExecutor js; 
 	Actions actions;
+   //to help page class, page class reusable methods are written here
 	
-//to help page class, page class reusable methods are written here
-	
-	
-
-	public void JavaScriptUtility(WebDriver driver) {
-        js = (JavascriptExecutor) driver;
+	public PageUtility(WebDriver driver) {
+	      
+	        this.js = (JavascriptExecutor) driver;
     }
-	
+	public void JSscrollToElement(WebElement element) {
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 	public void JSscrollDown() {
         js.executeScript("window.scrollTo(0, document.body.scrollHeight)","");
     }
-
-    public void JSscrollToElement(WebElement element) {
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
-    }
-
-    public void clickByJSMessageButton(WebElement element) {
+   
+    public void clickByJS(WebElement element) {
         js.executeScript("arguments[0].click();", element);
     }
 
@@ -65,6 +61,11 @@ public class PageUtility {
 	public void doubleclick(WebElement element)
 	{
 		actions.doubleClick(element).perform();
+		
+	}
+	public void actionclick(WebElement element)
+	{
+		actions.click(element).perform();
 		
 	}
 	public void draganddrop(WebElement source, WebElement target)

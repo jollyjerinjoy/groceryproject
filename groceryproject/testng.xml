@@ -10,6 +10,10 @@
       <class name="testscript.LoginTest"/>
       <class name="testscript.NewsTest"/>
       <class name="testscript.LogoutTest"/>
+      <class name="testscript.AdminTest"/>
+      <class name="testscript.FooterTextTest"/>
+      <class name="testscript.ContactTest"/>
+      <class name="testscript.CategoryTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

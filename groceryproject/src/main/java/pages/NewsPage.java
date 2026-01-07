@@ -12,7 +12,7 @@ import utilities.WaitUtility;
 public class NewsPage {
 	public WebDriver driver;
 	
-	PageUtility pageutility= new PageUtility();
+	PageUtility pageutility= new PageUtility(driver);
 	WaitUtility waitutility= new WaitUtility();
 	
     @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']")WebElement pageutility_ManageNewsMoreInfo;

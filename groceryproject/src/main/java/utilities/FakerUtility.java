@@ -4,7 +4,13 @@ import com.github.javafaker.Faker;
 
 public class FakerUtility {
 	Faker faker = new Faker();
+	
+	public String creatARandomUserName(String ruser) {
 
+		return faker.name().username();
+
+	}
+	
 	public String creatARandomFirstName() {
 
 		return faker.name().firstName();

@@ -45,7 +45,7 @@ public class Base {
 		
 		}
 
-  @AfterMethod(alwaysRun=true)
+ @AfterMethod(alwaysRun=true)
   public void browserClose()  
 	{
 		driver.quit();

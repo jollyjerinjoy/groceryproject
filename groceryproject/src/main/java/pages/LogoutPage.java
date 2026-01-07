@@ -9,12 +9,13 @@ import utilities.PageUtility;
 
 public class LogoutPage {
 	public WebDriver driver;
-    PageUtility pageutility= new PageUtility();
+    PageUtility pageutility= new PageUtility(driver);
    // FileUploadUtility fileuploadutility =new FileUploadUtility();
     
 //@FindBy(xpath="//input[@name='username']")WebElement username;
 //@FindBy(xpath="//input[@name='password']")WebElement password;
 //@FindBy(xpath="//button[@type='submit']")WebElement submit;
+@FindBy(xpath="//a[text()='Home']")WebElement returnhomepage;   
 @FindBy(xpath="//li[@class='nav-item dropdown']")WebElement nav_item_dropdown;
 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/logout']")WebElement logout;
 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/login']")WebElement Logindefaultpage;
@@ -40,6 +41,11 @@ public LogoutPage(WebDriver driver) {
 //pageutility.click_on_element(submit);
 
 //}
+public void returnhomepage()
+{
+pageutility.click_on_element(returnhomepage);
+
+}
 public void nav_item_dropdown()
 {
 pageutility.click_on_element(nav_item_dropdown);

@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class LogoutTest extends Base {
 	@Test(priority=1)
-	public void verifyloginout() throws IOException
+	public void verifylogout() throws IOException
 	{
 	//	String user="admin"; //webelement, method in page class
 	//	String passwd="admin";
@@ -24,6 +24,7 @@ public class LogoutTest extends Base {
 		loginpage.signin();
 		
 	    LogoutPage logoutpage=new LogoutPage(driver);
+	    logoutpage.returnhomepage();
 	    logoutpage.nav_item_dropdown();
 	    logoutpage.logout();
 		boolean logindefaultpage=logoutpage.isLogindefaultpageDisplayed();
