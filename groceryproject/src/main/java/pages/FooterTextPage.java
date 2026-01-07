@@ -18,7 +18,7 @@ public class FooterTextPage {
 		WaitUtility waitutility= new WaitUtility();
 	
   //  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext']")WebElement pageutility_ManageFooterTextPageMoreInfo;
-    @FindBy(xpath="//a[contains(@href,'list-footertext')]")WebElement pageutility_ManageFooterTextPageMoreInfo;
+  //  @FindBy(xpath="//a[contains(@href,'list-footertext')]")WebElement pageutility_ManageFooterTextPageMoreInfo;
     @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/Footertext/edit?edit=1']")WebElement pageutility_FooterTextEdit;
     @FindBy(xpath="//textarea[@name='address']")WebElement pageutilty_FooterTextPageAddress;
     @FindBy(xpath="//input[@name='email']")WebElement pageutilty_FooterTextPageEmail;
@@ -28,12 +28,12 @@ public class FooterTextPage {
 
 public FooterTextPage(WebDriver driver) {
 	this.driver=driver; //assign current class driver to global driver
-	 this.pageutility = new PageUtility(driver);
+	this.pageutility = new PageUtility(driver);
 	PageFactory.initElements(driver, this);  //static method ,hence called classname.method <2 para, local driver, current class instance driver
 	//to initialize webelements we use initElements.
 	}
-public void ManageFooterTextPageMoreInfo()
-{
+//public void ManageFooterTextPageMoreInfo()
+//{
 	
 	
 	//js.executeScript("window.scrollBy(0,550)","");  //xaxis0, yaxis 150
@@ -43,38 +43,45 @@ public void ManageFooterTextPageMoreInfo()
    //	waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);
    	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
 	
-	pageutility.JSscrollToElement(pageutility_ManageFooterTextPageMoreInfo);
-	pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
-}
+//	pageutility.JSscrollToElement(pageutility_ManageFooterTextPageMoreInfo);
+//	pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
+//}
 
 
-public void FooterTextEdit()
+public FooterTextPage FooterTextEdit()
 {
 	pageutility.click_on_element(pageutility_FooterTextEdit);
+	return this;
 }
 
-public void FooterTextPageAddress(String address)
+public FooterTextPage FooterTextPageAddress(String address)
 {
 	//username.sendKeys(user);
 	pageutility.clear_element_data(pageutilty_FooterTextPageAddress);
 	pageutility.send_data_to_element(pageutilty_FooterTextPageAddress, address);
+	return this;
 }
-public void FooterTextPageEmail(String email)
+public FooterTextPage FooterTextPageEmail(String email)
 {
 	//username.sendKeys(user);
 	pageutility.clear_element_data(pageutilty_FooterTextPageEmail);
 	pageutility.send_data_to_element(pageutilty_FooterTextPageEmail, email);
+	return this;
 }
-public void FooterTextPagePhone(String phone)
+public FooterTextPage FooterTextPagePhone(String phone)
 {
 	//username.sendKeys(user);
 	pageutility.clear_element_data(pageutilty_FooterTextPagePhone);
 	pageutility.send_data_to_element(pageutilty_FooterTextPagePhone, phone);
+	
+	return this;
 }
 
-public void FooterTextPageUpdate()
+public FooterTextPage FooterTextPageUpdate()
 {
-	pageutility.click_on_element(pageutilty_FooterTextPageUpdate);
+pageutility.click_on_element(pageutilty_FooterTextPageUpdate);
+	//pageutility.clickByJS(pageutilty_FooterTextPageUpdate);
+	return this;
 	
 }
 public boolean isAlertDisplayed()

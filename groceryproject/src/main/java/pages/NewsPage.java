@@ -15,7 +15,7 @@ public class NewsPage {
 	PageUtility pageutility= new PageUtility(driver);
 	WaitUtility waitutility= new WaitUtility();
 	
-    @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']")WebElement pageutility_ManageNewsMoreInfo;
+//ch    @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']")WebElement pageutility_ManageNewsMoreInfo;
     @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement pageutility_newsnewbutton;
     @FindBy(xpath="//textarea[@name='news']")WebElement pageutility_newsaddtestarea;
     @FindBy(xpath="//button[@name='create']")WebElement pageutility_newscreate;
@@ -28,27 +28,30 @@ public class NewsPage {
 		}
        
    
-    public void ManageNewsMoreInfo()
-    {
+ //ch   public void ManageNewsMoreInfo()
+ //   {
        
-    	waitutility.waitForElementToBeClickable(driver, pageutility_ManageNewsMoreInfo);	
-		pageutility.click_on_element(pageutility_ManageNewsMoreInfo);
+//    	waitutility.waitForElementToBeClickable(driver, pageutility_ManageNewsMoreInfo);	
+//		pageutility.click_on_element(pageutility_ManageNewsMoreInfo);
     	//pageutility.click_on_element(pageutility_newsnewbutton);
     	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainings");
     	//pageutility.click_on_element(pageutility_newscreate);
-    }
-    public void newsnewbutton()
+//    }
+    public NewsPage newsnewbutton()
     {
     	pageutility.click_on_element(pageutility_newsnewbutton);
+		return this;
     }
-    public void newsaddtestarea(String addtestarea)
+    public NewsPage newsaddtestarea(String addtestarea)
     {
     	pageutility.send_data_to_element(pageutility_newsaddtestarea, addtestarea);
     	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainingsrtest");
+		return this;
     }
-    public void newscreate()
+    public NewsPage newscreate()
     {
     	pageutility.click_on_element(pageutility_newscreate);
+		return this;
     	
     }
     public boolean isAlertDisplayed()

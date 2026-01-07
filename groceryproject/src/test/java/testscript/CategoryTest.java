@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pages.AdminPage;
 import pages.CategoryPage;
 import pages.ContactPage;
 import pages.LoginPage;
@@ -21,6 +22,8 @@ import utilities.ExcelUtility;
 import utilities.RandomUtility;
 
 public class CategoryTest extends Base {
+	LogoutPage logoutpage; //=new LogoutPage(driver);
+	CategoryPage categorypage;
 	@Test(priority=1)
 	public void verifyCategoryPageUpdate () throws IOException, AWTException
 	{
@@ -30,26 +33,28 @@ public class CategoryTest extends Base {
 			String passwd=ExcelUtility.readStringData(1, 1,"LoginPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
 			
 			LoginPage loginpage=new LoginPage(driver);  //pass value driver 
-			loginpage.enterTheUsername(user);  //calling page methods, passvalue 
-			loginpage.enterThePasword(passwd); //calling page methods, passvalue
-			loginpage.signin();
+			loginpage.enterTheUsername(user).enterThePasword(passwd);  //calling page methods, passvalue 
+			//loginpage.enterThePasword(passwd); //calling page methods, passvalue
+			logoutpage=loginpage.signin();
 			
-		LogoutPage logoutpage=new LogoutPage(driver);
-		logoutpage.returnhomepage();
-			
-		CategoryPage categorypage=new CategoryPage(driver);
-		categorypage.ManageCategoryPageMoreInfo();
-		categorypage.CategoryPageNew();
-
-	//	RandomUtility randomutility=new RandomUtility();
-		categorypage.CategoryPageCategory("testCategory");
-	//	categorypage.selectDiscountGroup();
+	//	LogoutPage logoutpage=new LogoutPage(driver);
+	//	logoutpage.returnhomepage();
+		categorypage=logoutpage.ManageCategoryPageMoreInfo();
+	//	CategoryPage categorypage=new CategoryPage(driver);
 		
-	
-		
-		categorypage.CategoryPagefileupload();
-		categorypage.CategoryPagecreate();					
-		//boolean alertpage= categorypage.isAlertDisplayed();
+		categorypage.CategoryPageNew().CategoryPageCategory("testCategory").CategoryPagefileupload().CategoryPagecreate();
+//		categorypage.ManageCategoryPageMoreInfo();
+//		categorypage.CategoryPageNew();
+//
+//	//	RandomUtility randomutility=new RandomUtility();
+//		categorypage.CategoryPageCategory("testCategory");
+//	//	categorypage.selectDiscountGroup();
+//		
+//	
+//		
+//		categorypage.CategoryPagefileupload();
+//		categorypage.CategoryPagecreate();					
+//		//boolean alertpage= categorypage.isAlertDisplayed();
 		//Assert.assertTrue(alertpage, "Updated Successfully"); //hard assertion , classname.methodname
 	
 		

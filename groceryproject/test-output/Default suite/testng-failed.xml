@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.CategoryTest">
+      <class name="testscript.FooterTextTest">
         <methods>
+          <include name="verifyFooterTextUpdate"/>
           <include name="browserInitialization"/>
-          <include name="verifyCategoryPageUpdate"/>
+          <include name="browserClose"/>
         </methods>
-      </class> <!-- testscript.CategoryTest -->
+      </class> <!-- testscript.FooterTextTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

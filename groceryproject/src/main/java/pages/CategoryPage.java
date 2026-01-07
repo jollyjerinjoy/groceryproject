@@ -29,7 +29,7 @@ public class CategoryPage{
 			 	WaitUtility waitutility= new WaitUtility();
 				
 			  //  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext']")WebElement pageutility_ManageFooterTextPageMoreInfo;
-			    @FindBy(xpath="//a[contains(@href,'list-category')]")WebElement pageutility_ManageCategoryPageMoreInfo;
+//			    @FindBy(xpath="//a[contains(@href,'list-category')]")WebElement pageutility_ManageCategoryPageMoreInfo;
 			    @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement pageutility_CategoryPageNew;
 			    @FindBy(xpath="//input[@name='category']")WebElement pageutility_CategoryPageCategory;
 			   // @FindBy(xpath="//option[text()='discount']")WebElement discountGroup;
@@ -51,31 +51,33 @@ public class CategoryPage{
 				PageFactory.initElements(driver, this);  //static method ,hence called classname.method <2 para, local driver, current class instance driver
 				//to initialize webelements we use initElements.
 				}
-			public void ManageCategoryPageMoreInfo()
-			{
-					
-				//js.executeScript("window.scrollBy(0,550)","");  //xaxis0, yaxis 150
-				//js.executeScript("window.scrollBy(0,-550)",""); 
-				////js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
-							   //	waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);
-			   	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
-				pageutility.JSscrollToElement(pageutility_ManageCategoryPageMoreInfo);
-				pageutility.click_on_element(pageutility_ManageCategoryPageMoreInfo);
-			}
+//			public CategoryPage ManageCategoryPageMoreInfo()
+//			{
+//					
+//				//js.executeScript("window.scrollBy(0,550)","");  //xaxis0, yaxis 150
+//				//js.executeScript("window.scrollBy(0,-550)",""); 
+//				////js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+//							   //	waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);
+//			   	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
+//				pageutility.JSscrollToElement(pageutility_ManageCategoryPageMoreInfo);
+//				pageutility.click_on_element(pageutility_ManageCategoryPageMoreInfo);
+//			}
 
-			public void CategoryPageNew()
+			public CategoryPage CategoryPageNew()
 			{
 				waitutility.waitForElementToBeClickable(driver, pageutility_CategoryPageNew);
 				pageutility.click_on_element(pageutility_CategoryPageNew);
+				return this;
 			}
 		
-			public void CategoryPageCategory(String category)
+			public CategoryPage CategoryPageCategory(String category)
 			{
 				//username.sendKeys(user);
 				pageutility.clear_element_data(pageutility_CategoryPageCategory);
 				pageutility.send_data_to_element(pageutility_CategoryPageCategory,category);
+				return this;
 			}
-			public void selectDiscountGroup() {
+			public CategoryPage selectDiscountGroup() {
 				// scroll to group section
 			  //  pageutility.JSscrollToElement(discountGroup);
 
@@ -96,22 +98,25 @@ public class CategoryPage{
 			    // wait & click right arrow
 			    waitutility.waitForElementToBeClickable(driver, moveRightButton);
 			    moveRightButton.click();
+				return this;
 			}
 			
-				public void CategoryPagefileupload() throws AWTException
+				public CategoryPage CategoryPagefileupload() throws AWTException
 {
 		//fileuploadutility.FileUploadusingRobotclass(fileuploadutility_CategoryPagefileuploadChoosefile,Constant.SUPERMART);
 		//pageutility.click_on_element(fileuploadutility_CategoryPagefileuploadChoosefile);
 		fileuploadutility.FileUploadusingSendkeys(fileuploadutility_CategoryPagefileuploadChoosefile,Constant.SUPERMART);
+		return this;
 		
 	}
-			public void CategoryPagecreate()
+			public CategoryPage CategoryPagecreate()
 			{
 				//pageutility.click_on_element(pageutilty_ContactPageUpdate);
 				pageutility.JSscrollToElement(pageutilty_CategoryPagecreate);
 			//	pageutility.click_on_element(pageutilty_CategoryPagecreate);
 			//	pageutility.actionclick(pageutilty_CategoryPagecreate);
 				pageutility.clickByJS(pageutilty_CategoryPagecreate);
+				return this;
 				
 			}
 			public boolean isAlertDisplayed()

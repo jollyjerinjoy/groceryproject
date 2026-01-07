@@ -13,6 +13,8 @@ import utilities.FakerUtility;
 import utilities.RandomUtility;
 
 public class AdminTest extends Base{
+	LogoutPage logoutpage; //=new LogoutPage(driver);
+	AdminPage adminpage;
 	@Test(priority=1)
 	public void verifyAdminusersSave () throws IOException
 	{
@@ -31,17 +33,20 @@ public class AdminTest extends Base{
 		
 		String passwd1=ExcelUtility.readStringData(1, 1,"AdminPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
 		String admindropdownlist=ExcelUtility.readStringData(1, 2,"AdminPage");
-		loginpage.enterTheUsername(user);  //calling page methods, passvalue 
-		loginpage.enterThePasword(passwd); //calling page methods, passvalue
-		loginpage.signin();
-		AdminPage adminpage=new AdminPage(driver); 
-		adminpage.ManageAdminMoreInfo();
-		adminpage.newsnewbutton();
-		adminpage.enteradminUsername(uniqueUserName);
-		adminpage.enteradminPasword(passwd1);
-		adminpage.admindropdownlist(admindropdownlist);
-		adminpage.admincreate();
-				
+		loginpage.enterTheUsername(user).enterThePasword(passwd);  //calling page methods, passvalue 
+		//loginpage.enterThePasword(passwd); //calling page methods, passvalue
+		logoutpage=loginpage.signin();
+		//AdminPage adminpage=new AdminPage(driver); 
+		//adminpage.ManageAdminMoreInfo();
+		//adminpage.newsnewbutton();
+		//adminpage.enteradminUsername(uniqueUserName);
+		//adminpage.enteradminPasword(passwd1);
+		//adminpage.admindropdownlist(admindropdownlist);
+		//adminpage.admincreate();
+			
+		adminpage=logoutpage.ManageAdminMoreInfo();
+		adminpage.newsnewbutton().enteradminUsername(uniqueUserName).enteradminPasword(passwd1).admindropdownlist(admindropdownlist).admincreate();
+		
 		boolean alertpage=adminpage.isAlertDisplayed();
 		Assert.assertTrue(alertpage, "User Created Successfully"); //hard assertion , classname.methodname
 		LogoutPage logoutpage=new LogoutPage(driver);

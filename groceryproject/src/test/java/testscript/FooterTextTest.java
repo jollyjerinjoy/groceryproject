@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.AdminPage;
+import pages.CategoryPage;
 import pages.LoginPage;
 import pages.LogoutPage;
 import pages.FooterTextPage;
@@ -13,6 +14,8 @@ import utilities.ExcelUtility;
 import utilities.RandomUtility;
 
 public class FooterTextTest extends Base {
+	LogoutPage logoutpage; //=new LogoutPage(driver);
+	FooterTextPage footertextpage;
 	@Test(priority=1)
 	public void verifyFooterTextUpdate () throws IOException
 	{
@@ -21,16 +24,17 @@ public class FooterTextTest extends Base {
 			String user=ExcelUtility.readStringData(1, 0, "LoginPage");   //readIntegerData(int row, int col, String sheet)
 			String passwd=ExcelUtility.readStringData(1, 1,"LoginPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
 			LoginPage loginpage=new LoginPage(driver);  //pass value driver 
-			loginpage.enterTheUsername(user);  //calling page methods, passvalue 
-			loginpage.enterThePasword(passwd); //calling page methods, passvalue
-			loginpage.signin();
+			loginpage.enterTheUsername(user).enterThePasword(passwd);
+			//loginpage.enterTheUsername(user);  //calling page methods, passvalue 
+		//	loginpage.enterThePasword(passwd); //calling page methods, passvalue
+			logoutpage=loginpage.signin();
 			
-		LogoutPage logoutpage=new LogoutPage(driver);
-		logoutpage.returnhomepage();
-			
-		FooterTextPage footertextpage=new FooterTextPage(driver);
-		footertextpage.ManageFooterTextPageMoreInfo();
-		footertextpage.FooterTextEdit();
+		//LogoutPage logoutpage=new LogoutPage(driver);
+	//	logoutpage.returnhomepage();
+			footertextpage=	logoutpage.ManageFooterTextPageMoreInfo();
+		//FooterTextPage footertextpage=new FooterTextPage(driver);
+	//	footertextpage.ManageFooterTextPageMoreInfo();
+//		footertextpage.FooterTextEdit();
 		RandomUtility randomutility=new RandomUtility();
 		String Address=ExcelUtility.readStringData(1, 0,"FooterTextPage");   //readIntegerData(int row, int col, String sheet)
 		//FakerUtility fakerutility=new FakerUtility();
@@ -40,11 +44,13 @@ public class FooterTextTest extends Base {
 		String Email=ExcelUtility.readStringData(1, 1,"FooterTextPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
 		String phone=ExcelUtility.readIntegerData(1, 2,"FooterTextPage");
 			
-		footertextpage.FooterTextPageAddress(uniqueAddress);
-		footertextpage.FooterTextPageEmail(Email);
-		footertextpage.FooterTextPagePhone(phone);
-		footertextpage.FooterTextPageUpdate();
-						
+//		footertextpage.FooterTextPageAddress(uniqueAddress);
+//		footertextpage.FooterTextPageEmail(Email);
+//		footertextpage.FooterTextPagePhone(phone);
+//		footertextpage.FooterTextPageUpdate();
+			
+		
+		footertextpage.FooterTextEdit().FooterTextPageAddress(uniqueAddress).FooterTextPageEmail(Email).FooterTextPagePhone(phone).FooterTextPageUpdate();
 		boolean alertpage=footertextpage.isAlertDisplayed();
 		Assert.assertTrue(alertpage, "Footer Text Updated Successfully"); //hard assertion , classname.methodname
 	

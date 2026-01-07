@@ -14,7 +14,7 @@ public class AdminPage {
    // FileUploadUtility fileuploadutility =new FileUploadUtility();
 		WaitUtility waitutility= new WaitUtility();
 	
-    @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement pageutility_ManageAdminMoreInfo;
+   //chaining @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement pageutility_ManageAdminMoreInfo;
    // @FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement pageutility_adminnewbutton;
     @FindBy(xpath="//a[@onclick='click_button(1)']")WebElement pageutility_adminnewbutton;
     @FindBy(xpath="//input[@id='username']")WebElement pageutilty_admininputusername;
@@ -29,35 +29,38 @@ public AdminPage(WebDriver driver) {
 	//to initialize webelements we use initElements.
 	}
 
-public void ManageAdminMoreInfo()
-{
-   	waitutility.waitForElementToBeClickable(driver, pageutility_ManageAdminMoreInfo);	
-	pageutility.click_on_element(pageutility_ManageAdminMoreInfo);
-}
-public void newsnewbutton()
+//chaining public void ManageAdminMoreInfo()
+//{
+//   	waitutility.waitForElementToBeClickable(driver, pageutility_ManageAdminMoreInfo);	
+//	pageutility.click_on_element(pageutility_ManageAdminMoreInfo);
+//}
+public AdminPage newsnewbutton()
 {
 	pageutility.click_on_element(pageutility_adminnewbutton);
+	return this;
 }
-public void enteradminUsername(String user1)
+public AdminPage  enteradminUsername(String user1)
 {
 	//username.sendKeys(user);
 	pageutility.send_data_to_element(pageutilty_admininputusername, user1);
+	return this;
 }
-public void enteradminPasword(String passwd1)
+public AdminPage enteradminPasword(String passwd1)
 {
 //password.sendKeys(passwd);
 	pageutility.send_data_to_element(pageutilty_admininputpassword, passwd1);
+	return this;
 }
-public void admindropdownlist(String admindropdownlist)
+public AdminPage admindropdownlist(String admindropdownlist)
 {
 	pageutility.selectByVisibleTextDropdownMethod(pageutilty_admindropdownlist, admindropdownlist);
-	
+	return this;
 	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainingsrtest");
 }
-public void admincreate()
+public AdminPage admincreate()
 {
 	pageutility.click_on_element(pageutility_admincreate);
-	
+	return this;
 }
 public boolean isAlertDisplayed()
 {

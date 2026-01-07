@@ -6,10 +6,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class LogoutPage {
 	public WebDriver driver;
-    PageUtility pageutility= new PageUtility(driver);
+    PageUtility pageutility;//= new PageUtility(driver);
+    WaitUtility waitutility= new WaitUtility();
    // FileUploadUtility fileuploadutility =new FileUploadUtility();
     
 //@FindBy(xpath="//input[@name='username']")WebElement username;
@@ -20,12 +22,87 @@ public class LogoutPage {
 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/logout']")WebElement logout;
 @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/login']")WebElement Logindefaultpage;
 
+@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement pageutility_ManageAdminMoreInfo;
+@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']")WebElement pageutility_ManageNewsMoreInfo;
+@FindBy(xpath="//a[contains(@href,'list-footertext')]")WebElement pageutility_ManageFooterTextPageMoreInfo;
+@FindBy(xpath="//a[contains(@href,'list-contact')]")WebElement pageutility_ManageContactPageMoreInfo;
+@FindBy(xpath="//a[contains(@href,'list-category')]")WebElement pageutility_ManageCategoryPageMoreInfo;
 
 public LogoutPage(WebDriver driver) {
 	this.driver=driver; //assign current class driver to global driver
+	this.pageutility = new PageUtility(driver);
 	PageFactory.initElements(driver, this);  //static method ,hence called classname.method <2 para, local driver, current class instance driver
 	//to initialize webelements we use initElements.
 	}
+
+public AdminPage ManageAdminMoreInfo()
+{
+   	waitutility.waitForElementToBeClickable(driver, pageutility_ManageAdminMoreInfo);	
+	pageutility.click_on_element(pageutility_ManageAdminMoreInfo);
+	return new AdminPage(driver);
+}
+public NewsPage ManageNewsMoreInfo()
+{
+   
+	waitutility.waitForElementToBeClickable(driver, pageutility_ManageNewsMoreInfo);	
+	pageutility.click_on_element(pageutility_ManageNewsMoreInfo);
+	//pageutility.click_on_element(pageutility_newsnewbutton);
+	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainings");
+	//pageutility.click_on_element(pageutility_newscreate);
+	return new NewsPage(driver);
+}
+
+public FooterTextPage ManageFooterTextPageMoreInfo()
+{
+	
+	
+	//js.executeScript("window.scrollBy(0,550)","");  //xaxis0, yaxis 150
+	//js.executeScript("window.scrollBy(0,-550)",""); 
+	////js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+	
+   //	waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);
+   	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
+	
+	//waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);	
+	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
+	
+      pageutility.JSscrollToElement(pageutility_ManageFooterTextPageMoreInfo);
+      pageutility.clickByJS(pageutility_ManageFooterTextPageMoreInfo);
+	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
+	return new FooterTextPage(driver);
+}
+public ContactPage ManageContactPageMoreInfo()
+{
+	
+	
+	//js.executeScript("window.scrollBy(0,550)","");  //xaxis0, yaxis 150
+	//js.executeScript("window.scrollBy(0,-550)",""); 
+	////js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+	
+   //	waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);
+   	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
+	
+	pageutility.JSscrollToElement(pageutility_ManageContactPageMoreInfo);
+	pageutility.click_on_element(pageutility_ManageContactPageMoreInfo);
+	return new ContactPage(driver);
+}
+
+public CategoryPage ManageCategoryPageMoreInfo()
+{
+		
+	//js.executeScript("window.scrollBy(0,550)","");  //xaxis0, yaxis 150
+	//js.executeScript("window.scrollBy(0,-550)",""); 
+	////js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+				   //	waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);
+   	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
+	pageutility.JSscrollToElement(pageutility_ManageCategoryPageMoreInfo);
+	pageutility.click_on_element(pageutility_ManageCategoryPageMoreInfo);
+	return new CategoryPage(driver);
+}
+
+
+
+
 //public void enterTheUsername(String user)
 //{
 

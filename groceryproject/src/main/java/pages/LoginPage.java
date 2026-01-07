@@ -31,20 +31,23 @@ public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);  //static method ,hence called classname.method <2 para, local driver, current class instance driver
 		//to initialize webelements we use initElements.
 		}
-public void enterTheUsername(String user)
+public LoginPage enterTheUsername(String user)
 {
 	//username.sendKeys(user);
 	pageutility.send_data_to_element(username, user);
+	return this;
 }
-public void enterThePasword(String passwd)
+public LoginPage enterThePasword(String passwd)
 {
 //password.sendKeys(passwd);
 	pageutility.send_data_to_element(password, passwd);
+	return this;
 }
-public void signin()
+public LogoutPage signin()
 {
 	pageutility.click_on_element(submit);
 //	submit.click();
+	return new LogoutPage(driver);
 }
 
 public boolean isHomePageDisplayed()

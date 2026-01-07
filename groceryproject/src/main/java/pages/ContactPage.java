@@ -17,7 +17,7 @@ public class ContactPage {
 			WaitUtility waitutility= new WaitUtility();
 		
 	  //  @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext']")WebElement pageutility_ManageFooterTextPageMoreInfo;
-	    @FindBy(xpath="//a[contains(@href,'list-contact')]")WebElement pageutility_ManageContactPageMoreInfo;
+//	    @FindBy(xpath="//a[contains(@href,'list-contact')]")WebElement pageutility_ManageContactPageMoreInfo;
 	    @FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/contact/edit_contact?edit=1']")WebElement pageutility_ContactPageEdit;
 	    @FindBy(xpath="//input[@name='phone']")WebElement pageutilty_ContactPagePhone;
 	    @FindBy(xpath="//input[@name='email']")WebElement pageutilty_ContactPageEmail;
@@ -33,8 +33,8 @@ public class ContactPage {
 		PageFactory.initElements(driver, this);  //static method ,hence called classname.method <2 para, local driver, current class instance driver
 		//to initialize webelements we use initElements.
 		}
-	public void ManageContactPageMoreInfo()
-	{
+//	public void ManageContactPageMoreInfo()
+//	{
 		
 		
 		//js.executeScript("window.scrollBy(0,550)","");  //xaxis0, yaxis 150
@@ -44,55 +44,62 @@ public class ContactPage {
 	   //	waitutility.waitForElementToBeClickable(driver, pageutility_ManageFooterTextPageMoreInfo);
 	   	//pageutility.click_on_element(pageutility_ManageFooterTextPageMoreInfo);
 		
-		pageutility.JSscrollToElement(pageutility_ManageContactPageMoreInfo);
-		pageutility.click_on_element(pageutility_ManageContactPageMoreInfo);
-	}
+//		pageutility.JSscrollToElement(pageutility_ManageContactPageMoreInfo);
+//		pageutility.click_on_element(pageutility_ManageContactPageMoreInfo);
+//	}
 
 
-	public void ContactPageEdit()
+	public ContactPage ContactPageEdit()
 	{
 		pageutility.click_on_element(pageutility_ContactPageEdit);
+		return this;
 	}
 
-	public void ContactPagePhone(String phone)
+	public ContactPage ContactPagePhone(String phone)
 	{
 		//username.sendKeys(user);
 		pageutility.clear_element_data(pageutilty_ContactPagePhone);
 		pageutility.send_data_to_element(pageutilty_ContactPagePhone, phone);
+		return this;
 	}
-	public void ContactPageEmail(String email)
+	public ContactPage ContactPageEmail(String email)
 	{
 		//username.sendKeys(user);
 		pageutility.clear_element_data(pageutilty_ContactPageEmail);
 		pageutility.send_data_to_element(pageutilty_ContactPageEmail, email);
+		return this;
 	}
 	
-	public void ContactPageAddress(String address)
+	public ContactPage ContactPageAddress(String address)
 	{
 		//username.sendKeys(user);
 		pageutility.clear_element_data(pageutilty_ContactPageAddress);
 		pageutility.send_data_to_element(pageutilty_ContactPageAddress, address);
+		return this;
 	}
-	public void ContactPageCT(String CT)
+	public ContactPage ContactPageCT(String CT)
 	{
 		//username.sendKeys(user);
 		pageutility.clear_element_data(pageutilty_ContactPageCT);
 		pageutility.send_data_to_element(pageutilty_ContactPageCT, CT);
+		return this;
 	}
-	public void ContactPageDCT(String DCT)
+	public ContactPage ContactPageDCT(String DCT)
 	{
 		//username.sendKeys(user);
 		pageutility.clear_element_data(pageutilty_ContactPageDCT);
 		pageutility.send_data_to_element(pageutilty_ContactPageDCT, DCT);
-		
+		return this;
 	}
 
-	public void ContactPageUpdate()
+	public ContactPage ContactPageUpdate()
 	{
 		//pageutility.click_on_element(pageutilty_ContactPageUpdate);
 		pageutility.JSscrollToElement(pageutilty_ContactPageUpdate);
 		//pageutility.click_on_element(pageutilty_ContactPageUpdate);
 		pageutility.clickByJS(pageutilty_ContactPageUpdate); //click by Js action.
+		return this;
+		
 	}
 	public boolean isAlertDisplayed()
 	{

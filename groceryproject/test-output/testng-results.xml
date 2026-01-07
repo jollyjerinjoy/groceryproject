@@ -1,22 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="2" total="9" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-07T07:59:08 GMT" name="Suite" finished-at="2026-01-07T07:59:33 GMT" duration-ms="24962">
+  <suite started-at="2026-01-07T17:42:03 GMT" name="Suite" finished-at="2026-01-07T17:43:00 GMT" duration-ms="56529">
     <groups>
       <group name="regression">
-        <method signature="LoginTest.verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@34123d65]" name="verifyloginwithvalidcredentails" class="testscript.LoginTest"/>
+        <method signature="LoginTest.verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@5fe94a96]" name="verifyloginwithvalidcredentails" class="testscript.LoginTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2026-01-07T07:59:08 GMT" name="Test" finished-at="2026-01-07T07:59:33 GMT" duration-ms="24962">
+    <test started-at="2026-01-07T17:42:03 GMT" name="Test" finished-at="2026-01-07T17:43:00 GMT" duration-ms="56529">
+      <class name="testscript.CategoryTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.CategoryTest@7586beff]" started-at="2026-01-07T17:42:54 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:56 GMT" duration-ms="2950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyCategoryPageUpdate()[pri:1, instance:testscript.CategoryTest@7586beff]" started-at="2026-01-07T17:42:56 GMT" name="verifyCategoryPageUpdate" finished-at="2026-01-07T17:43:00 GMT" duration-ms="3318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCategoryPageUpdate -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@7586beff]" started-at="2026-01-07T17:43:00 GMT" name="browserClose" finished-at="2026-01-07T17:43:00 GMT" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCategoryPageUpdate status=SUCCESS method=CategoryTest.verifyCategoryPageUpdate()[pri:1, instance:testscript.CategoryTest@7586beff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscript.CategoryTest -->
       <class name="com.demogrocery.app.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.demogrocery.app.AppTest@3270d194]" started-at="2026-01-07T07:59:08 GMT" name="shouldAnswerWithTrue" finished-at="2026-01-07T07:59:08 GMT" duration-ms="25" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.demogrocery.app.AppTest@59474f18]" started-at="2026-01-07T17:42:03 GMT" name="shouldAnswerWithTrue" finished-at="2026-01-07T17:42:03 GMT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- com.demogrocery.app.AppTest -->
+      <class name="testscript.NewsTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.NewsTest@4c402120]" started-at="2026-01-07T17:42:21 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:24 GMT" duration-ms="2703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyNewsIsCreated()[pri:1, instance:testscript.NewsTest@4c402120]" started-at="2026-01-07T17:42:24 GMT" name="verifyNewsIsCreated" finished-at="2026-01-07T17:42:27 GMT" duration-ms="3151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewsIsCreated -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4c402120]" started-at="2026-01-07T17:42:27 GMT" name="browserClose" finished-at="2026-01-07T17:42:27 GMT" duration-ms="165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewsIsCreated status=SUCCESS method=NewsTest.verifyNewsIsCreated()[pri:1, instance:testscript.NewsTest@4c402120] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscript.NewsTest -->
+      <class name="testscript.ContactTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ContactTest@4c12331b]" started-at="2026-01-07T17:42:46 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:49 GMT" duration-ms="3048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyContactPageUpdate()[pri:1, instance:testscript.ContactTest@4c12331b]" started-at="2026-01-07T17:42:49 GMT" name="verifyContactPageUpdate" finished-at="2026-01-07T17:42:53 GMT" duration-ms="4479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactPageUpdate -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@4c12331b]" started-at="2026-01-07T17:42:53 GMT" name="browserClose" finished-at="2026-01-07T17:42:54 GMT" duration-ms="171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyContactPageUpdate status=SUCCESS method=ContactTest.verifyContactPageUpdate()[pri:1, instance:testscript.ContactTest@4c12331b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscript.ContactTest -->
+      <class name="testscript.FooterTextTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.FooterTextTest@1165b38]" started-at="2026-01-07T17:42:39 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:42 GMT" duration-ms="2742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyFooterTextUpdate()[pri:1, instance:testscript.FooterTextTest@1165b38]" started-at="2026-01-07T17:42:42 GMT" name="verifyFooterTextUpdate" finished-at="2026-01-07T17:42:46 GMT" duration-ms="3411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterTextUpdate -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@1165b38]" started-at="2026-01-07T17:42:46 GMT" name="browserClose" finished-at="2026-01-07T17:42:46 GMT" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFooterTextUpdate status=SUCCESS method=FooterTextTest.verifyFooterTextUpdate()[pri:1, instance:testscript.FooterTextTest@1165b38] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscript.FooterTextTest -->
+      <class name="testscript.AdminTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminTest@5b12b668]" started-at="2026-01-07T17:42:32 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:35 GMT" duration-ms="2712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyAdminusersSave()[pri:1, instance:testscript.AdminTest@5b12b668]" started-at="2026-01-07T17:42:35 GMT" name="verifyAdminusersSave" finished-at="2026-01-07T17:42:39 GMT" duration-ms="4260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminusersSave -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@5b12b668]" started-at="2026-01-07T17:42:39 GMT" name="browserClose" finished-at="2026-01-07T17:42:39 GMT" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdminusersSave status=SUCCESS method=AdminTest.verifyAdminusersSave()[pri:1, instance:testscript.AdminTest@5b12b668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscript.AdminTest -->
+      <class name="testscript.LogoutTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@327514f]" started-at="2026-01-07T17:42:27 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:30 GMT" duration-ms="2619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifylogout()[pri:1, instance:testscript.LogoutTest@327514f]" started-at="2026-01-07T17:42:30 GMT" name="verifylogout" finished-at="2026-01-07T17:42:32 GMT" duration-ms="2487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogout -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@327514f]" started-at="2026-01-07T17:42:32 GMT" name="browserClose" finished-at="2026-01-07T17:42:32 GMT" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifylogout status=SUCCESS method=LogoutTest.verifylogout()[pri:1, instance:testscript.LogoutTest@327514f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- testscript.LogoutTest -->
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:08 GMT" name="browserInitialization" finished-at="2026-01-07T07:59:12 GMT" duration-ms="4131" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:03 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:07 GMT" duration-ms="3427" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,59 +195,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:12 GMT" name="verifyloginwithvalidcredentails" finished-at="2026-01-07T07:59:14 GMT" duration-ms="2176" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "c" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "c" is null
-at utilities.ExcelUtility.readStringData(ExcelUtility.java:25)
-at testscript.LoginTest.verifyloginwithvalidcredentails(LoginTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:07 GMT" name="verifyloginwithvalidcredentails" finished-at="2026-01-07T17:42:10 GMT" duration-ms="2871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyloginwithvalidcredentails -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:14 GMT" name="browserClose" finished-at="2026-01-07T07:59:15 GMT" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:10 GMT" name="browserClose" finished-at="2026-01-07T17:42:10 GMT" duration-ms="192" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyloginwithvalidcredentails status=SKIP method=LoginTest.verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@34123d65] output={null}]]]>
+                <![CDATA[[TestResult name=verifyloginwithvalidcredentails status=SUCCESS method=LoginTest.verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:15 GMT" name="browserInitialization" finished-at="2026-01-07T07:59:18 GMT" duration-ms="3063" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:10 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:13 GMT" duration-ms="2715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,148 +221,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:18 GMT" name="verifyloginwithvalidcredentails" finished-at="2026-01-07T07:59:18 GMT" duration-ms="233" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "c" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "c" is null
-at utilities.ExcelUtility.readStringData(ExcelUtility.java:25)
-at testscript.LoginTest.verifyloginwithvalidcredentails(LoginTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyloginwithvalidcredentails -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:18 GMT" name="browserClose" finished-at="2026-01-07T07:59:18 GMT" duration-ms="162" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyloginwithvalidcredentails status=SKIP method=LoginTest.verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@34123d65] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:18 GMT" name="browserInitialization" finished-at="2026-01-07T07:59:21 GMT" duration-ms="2749" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:21 GMT" name="verifyloginwithvalidcredentails" finished-at="2026-01-07T07:59:21 GMT" duration-ms="197" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "c" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue()" because "c" is null
-at utilities.ExcelUtility.readStringData(ExcelUtility.java:25)
-at testscript.LoginTest.verifyloginwithvalidcredentails(LoginTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyloginwithvalidcredentails -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:21 GMT" name="browserClose" finished-at="2026-01-07T07:59:21 GMT" duration-ms="268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyloginwithvalidcredentails status=FAILURE method=LoginTest.verifyloginwithvalidcredentails()[pri:1, instance:testscript.LoginTest@34123d65] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:21 GMT" name="browserInitialization" finished-at="2026-01-07T07:59:24 GMT" duration-ms="2884" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifylogininvalidpassword()[pri:2, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:24 GMT" name="verifylogininvalidpassword" finished-at="2026-01-07T07:59:25 GMT" duration-ms="939" status="PASS">
+        <test-method signature="verifylogininvalidpassword()[pri:2, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:13 GMT" name="verifylogininvalidpassword" finished-at="2026-01-07T17:42:13 GMT" duration-ms="747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogininvalidpassword -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:25 GMT" name="browserClose" finished-at="2026-01-07T07:59:25 GMT" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:13 GMT" name="browserClose" finished-at="2026-01-07T17:42:14 GMT" duration-ms="179" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogininvalidpassword status=SUCCESS method=LoginTest.verifylogininvalidpassword()[pri:2, instance:testscript.LoginTest@34123d65] output={null}]]]>
+                <![CDATA[[TestResult name=verifylogininvalidpassword status=SUCCESS method=LoginTest.verifylogininvalidpassword()[pri:2, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:25 GMT" name="browserInitialization" finished-at="2026-01-07T07:59:28 GMT" duration-ms="2686" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:14 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:16 GMT" duration-ms="2807" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -242,22 +247,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifylogininvalidusername()[pri:3, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:28 GMT" name="verifylogininvalidusername" finished-at="2026-01-07T07:59:29 GMT" duration-ms="825" status="PASS">
+        <test-method signature="verifylogininvalidusername()[pri:3, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:16 GMT" name="verifylogininvalidusername" finished-at="2026-01-07T17:42:17 GMT" duration-ms="770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogininvalidusername -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:29 GMT" name="browserClose" finished-at="2026-01-07T07:59:29 GMT" duration-ms="163" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:17 GMT" name="browserClose" finished-at="2026-01-07T17:42:17 GMT" duration-ms="154" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogininvalidusername status=SUCCESS method=LoginTest.verifylogininvalidusername()[pri:3, instance:testscript.LoginTest@34123d65] output={null}]]]>
+                <![CDATA[[TestResult name=verifylogininvalidusername status=SUCCESS method=LoginTest.verifylogininvalidusername()[pri:3, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:29 GMT" name="browserInitialization" finished-at="2026-01-07T07:59:32 GMT" duration-ms="2984" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:17 GMT" name="browserInitialization" finished-at="2026-01-07T17:42:20 GMT" duration-ms="2561" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -268,15 +273,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifylogininvalidusernamepwd()[pri:4, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:32 GMT" name="verifylogininvalidusernamepwd" finished-at="2026-01-07T07:59:33 GMT" duration-ms="847" status="PASS">
+        <test-method signature="verifylogininvalidusernamepwd()[pri:4, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:20 GMT" name="verifylogininvalidusernamepwd" finished-at="2026-01-07T17:42:21 GMT" duration-ms="903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogininvalidusernamepwd -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@34123d65]" started-at="2026-01-07T07:59:33 GMT" name="browserClose" finished-at="2026-01-07T07:59:33 GMT" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-07T17:42:21 GMT" name="browserClose" finished-at="2026-01-07T17:42:21 GMT" duration-ms="164" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifylogininvalidusernamepwd status=SUCCESS method=LoginTest.verifylogininvalidusernamepwd()[pri:4, instance:testscript.LoginTest@34123d65] output={null}]]]>
+                <![CDATA[[TestResult name=verifylogininvalidusernamepwd status=SUCCESS method=LoginTest.verifylogininvalidusernamepwd()[pri:4, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
               </value>
             </param>
           </params>
