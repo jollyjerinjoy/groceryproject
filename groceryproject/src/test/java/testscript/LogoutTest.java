@@ -29,7 +29,7 @@ public class LogoutTest extends Base {
 		logoutpage.returnHomePage().loginuser_Nav_Item_Dropdown_Select().logout_Button_Click();
 		//logoutpage.nav_Item_Dropdown();
 		//logoutpage.logout();
-		boolean logindefaultpage = logoutpage.isLogindefaultpageDisplayed();
+		boolean logindefaultpage = logoutpage.isLoginReloginpageDisplayed();
 		if(!logindefaultpage)
 		{
 			Assert.fail(Constant.LOGOUT_FAILURE);

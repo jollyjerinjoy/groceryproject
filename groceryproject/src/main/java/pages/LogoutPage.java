@@ -24,7 +24,7 @@ public class LogoutPage {
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/logout']")
 	WebElement logout;
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/login']")
-	WebElement logindefaultpage;
+	WebElement loginReloginpage;
 
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")
 	WebElement pageutility_ManageAdminMoreInfo;
@@ -142,8 +142,8 @@ public class LogoutPage {
 		return this;
 	}
 
-	public boolean isLogindefaultpageDisplayed() {
+	public boolean isLoginReloginpageDisplayed() {
 		// return dashboard.isDisplayed();
-		return pageutility.element_isDisplayed(logindefaultpage);
+		return pageutility.element_isDisplayed(loginReloginpage);
 	}
 }

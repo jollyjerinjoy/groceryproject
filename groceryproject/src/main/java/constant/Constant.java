@@ -4,21 +4,22 @@ public class Constant {
 	public static final String TESTDATAFILE = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData.xlsx";
 	public static final String SUPERMART = System.getProperty("user.dir") + "\\src\\test\\resources\\supermart.jpg";
 	
-	public static final String LOGIN_WITHVALIDCREDENTIALS = "Error occured: failed to login with correct username and password";
-	public static final String NOLOGIN_WITHVALIDCREDENTIALS = "Success login with correct username and password";
+	public static final String LOGIN_WITHVALIDCREDENTIALS ="Pass:Success login with correct username and password";
+	public static final String NOLOGIN_WITHVALIDCREDENTIALS =  "Fail:Error occured: failed to login with correct username and password";
 	
-	public static final String LOGIN_WITHINVALIDPASSOWRD = "Error occured: logged in  with incorrect password";
-	public static final String NOLOGIN_WITH_INVALIDPASSOWRD = " failed login successfully with incorrect password";
+	public static final String LOGIN_WITHINVALIDPASSOWRD = "Fail:Error occured: logged in  with incorrect password";
+	public static final String NOLOGIN_WITH_INVALIDPASSOWRD = "Pass:Login failed gracefully with incorrect password";
 	
 	
-	public static final String LOGIN_WITH_INVALIDUSERNAME = "Error occured: logged in  with incorrect username";
-	public static final String NOLOGIN_WITH_INVALIDUSERNAME= "failed login successfully with incorrect username";
+	public static final String LOGIN_WITH_INVALIDUSERNAME = "Fail:Error occured: logged in  with incorrect username";
+	public static final String NOLOGIN_WITH_INVALIDUSERNAME= "Pass:Login failed gracefully with incorrect username";
 	
-	public static final String LOGIN_WITH_INVALIDUSERNAMEPASSWORD = "Error occured: logged in  with incorrect username and password";
-	public static final String NOLOGIN_WITH_INVALIDUSERNAMEPASSWORD = "failed login successfully with  incorrect username and password";
+	public static final String LOGIN_WITH_INVALIDUSERNAMEPASSWORD = "Fail:Error occured: logged in  with incorrect username and password";
+	public static final String NOLOGIN_WITH_INVALIDUSERNAMEPASSWORD = "Pass:Login failed gracefully with  incorrect username and password";
 	
-	public static final String LOGOUT_SUCCESS = "Default login page displayed";  //
-	public static final String LOGOUT_FAILURE = "Error occured: logout failed";
+	public static final String LOGOUT_SUCCESS = "Default relogin page displayed to login.";  
+	public static final String LOGOUT_FAILURE = "Error occured: logout failed, still logged in  state";
+	
 	public static final String ADMIN_CREATE_SUCCESS = "User Created Successfully";
 	public static final String ADMIN_CREATE_FAILED = "Error occured: Username already exists.!";
 	public static final String CATEGORY_CREATE_SUCCESS = "Category Created Successfully";
