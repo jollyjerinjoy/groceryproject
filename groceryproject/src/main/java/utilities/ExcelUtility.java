@@ -16,7 +16,7 @@ public class ExcelUtility {
 	static XSSFSheet sh;
 
 	public static String readStringData(int row, int col, String sheet) throws IOException {
-		String filepath=Constant.TESTDATAFILE;
+		String filepath = Constant.TESTDATAFILE;
 		f = new FileInputStream(filepath);
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet(sheet);
@@ -27,7 +27,7 @@ public class ExcelUtility {
 	}
 
 	public static String readIntegerData(int row, int col, String sheet) throws IOException {
-		String filepath=Constant.TESTDATAFILE;
+		String filepath = Constant.TESTDATAFILE;
 		f = new FileInputStream(filepath);
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet(sheet);
@@ -37,5 +37,5 @@ public class ExcelUtility {
 		return String.valueOf(val); // convert int to string using valueOf() method
 		// return val;
 	}
-	
+
 }

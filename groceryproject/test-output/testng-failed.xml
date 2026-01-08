@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testscript.FooterTextTest">
+      <class name="testscript.CategoryTest">
         <methods>
-          <include name="verifyFooterTextUpdate"/>
-          <include name="browserInitialization"/>
           <include name="browserClose"/>
+          <include name="browserInitialization"/>
+          <include name="verifyCategoryPageAdd"/>
         </methods>
-      </class> <!-- testscript.FooterTextTest -->
+      </class> <!-- testscript.CategoryTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

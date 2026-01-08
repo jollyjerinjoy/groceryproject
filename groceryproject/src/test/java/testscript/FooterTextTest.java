@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.AdminPage;
 import pages.CategoryPage;
 import pages.LoginPage;
@@ -14,46 +15,58 @@ import utilities.ExcelUtility;
 import utilities.RandomUtility;
 
 public class FooterTextTest extends Base {
-	LogoutPage logoutpage; //=new LogoutPage(driver);
+	LogoutPage logoutpage; // =new LogoutPage(driver);
 	FooterTextPage footertextpage;
-	@Test(priority=1)
-	public void verifyFooterTextUpdate () throws IOException
-	{
-		//	String user="admin"; //webelement, method in page class
-		//	String passwd="admin";
-			String user=ExcelUtility.readStringData(1, 0, "LoginPage");   //readIntegerData(int row, int col, String sheet)
-			String passwd=ExcelUtility.readStringData(1, 1,"LoginPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
-			LoginPage loginpage=new LoginPage(driver);  //pass value driver 
-			loginpage.enterTheUsername(user).enterThePasword(passwd);
-			//loginpage.enterTheUsername(user);  //calling page methods, passvalue 
-		//	loginpage.enterThePasword(passwd); //calling page methods, passvalue
-			logoutpage=loginpage.signin();
-			
-		//LogoutPage logoutpage=new LogoutPage(driver);
-	//	logoutpage.returnhomepage();
-			footertextpage=	logoutpage.ManageFooterTextPageMoreInfo();
-		//FooterTextPage footertextpage=new FooterTextPage(driver);
-	//	footertextpage.ManageFooterTextPageMoreInfo();
+
+	@Test(priority = 1, description ="verifyFooterTextUpdate")
+	public void verifyFooterTextUpdate() throws IOException {
+		// String user="admin"; //webelement, method in page class
+		// String passwd="admin";
+		String user = ExcelUtility.readStringData(1, 0, "LoginPage"); // readIntegerData(int row, int col, String sheet)
+		String passwd = ExcelUtility.readStringData(1, 1, "LoginPage"); // String passwd=ExcelUtility.readStringData(1,
+																		// 1,"NewsPage");
+		LoginPage loginpage = new LoginPage(driver); // pass value driver
+		loginpage.enterTheUsername(user).enterThePasword(passwd);
+		// loginpage.enterTheUsername(user); //calling page methods, passvalue
+		// loginpage.enterThePasword(passwd); //calling page methods, passvalue
+		logoutpage = loginpage.signin();
+
+		// LogoutPage logoutpage=new LogoutPage(driver);
+		// logoutpage.returnhomepage();
+		footertextpage = logoutpage.ManageFooterTextPageMoreInfo();
+		// FooterTextPage footertextpage=new FooterTextPage(driver);
+		// footertextpage.ManageFooterTextPageMoreInfo();
 //		footertextpage.FooterTextEdit();
-		RandomUtility randomutility=new RandomUtility();
-		String Address=ExcelUtility.readStringData(1, 0,"FooterTextPage");   //readIntegerData(int row, int col, String sheet)
-		//FakerUtility fakerutility=new FakerUtility();
-		//String user2=fakerutility.creatARandomUserName(user1);
-		
-		String uniqueAddress=randomutility.getUniqueText(Address);
-		String Email=ExcelUtility.readStringData(1, 1,"FooterTextPage");   //  String passwd=ExcelUtility.readStringData(1, 1,"NewsPage");
-		String phone=ExcelUtility.readIntegerData(1, 2,"FooterTextPage");
-			
+		RandomUtility randomutility = new RandomUtility();
+		String Address = ExcelUtility.readStringData(1, 0, "FooterTextPage"); // readIntegerData(int row, int col,
+																				// String sheet)
+		// FakerUtility fakerutility=new FakerUtility();
+		// String user2=fakerutility.creatARandomUserName(user1);
+
+		String uniqueAddress = randomutility.getUniqueText(Address);
+		String Email = ExcelUtility.readStringData(1, 1, "FooterTextPage"); // String
+																			// passwd=ExcelUtility.readStringData(1,
+																			// 1,"NewsPage");
+		String phone = ExcelUtility.readIntegerData(1, 2, "FooterTextPage");
+
 //		footertextpage.FooterTextPageAddress(uniqueAddress);
 //		footertextpage.FooterTextPageEmail(Email);
 //		footertextpage.FooterTextPagePhone(phone);
 //		footertextpage.FooterTextPageUpdate();
-			
+
+		footertextpage.footerTextEditButtonClick().footerTextPageEnterAddress(uniqueAddress).footerTextPageEnterEmail(Email)
+				.footerTextPageEnterPhone(phone).footerTextPageUpdateButtonClick();
+	//	boolean alertpage = footertextpage.isAlertDisplayed();
+	//	Assert.assertTrue(alertpage, "Footer Text Updated Successfully"); // hard assertion , classname.methodname
+
+		boolean alertpage= footertextpage.isAlertDisplayed();
+		if (!alertpage) {
+		    Assert.fail(Constant.FOOTERTEXT_CREATE_FAILED);
+		}
+		Assert.assertTrue(alertpage, Constant.FOOTERTEXT_CREATE_SUCCESS);
+
+			}
 		
-		footertextpage.FooterTextEdit().FooterTextPageAddress(uniqueAddress).FooterTextPageEmail(Email).FooterTextPagePhone(phone).FooterTextPageUpdate();
-		boolean alertpage=footertextpage.isAlertDisplayed();
-		Assert.assertTrue(alertpage, "Footer Text Updated Successfully"); //hard assertion , classname.methodname
-	
-		
+
 	}
-}
+

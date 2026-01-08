@@ -37,20 +37,20 @@ public class NewsPage {
     	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainings");
     	//pageutility.click_on_element(pageutility_newscreate);
 //    }
-    public NewsPage newsnewbutton()
+    public NewsPage newsNewbuttonClick()
     {
-    	pageutility.click_on_element(pageutility_newsnewbutton);
+    	pageutility.click_On_Element(pageutility_newsnewbutton);
 		return this;
     }
-    public NewsPage newsaddtestarea(String addtestarea)
+    public NewsPage newsAddNewsToTextarea(String addtotextarea)
     {
-    	pageutility.send_data_to_element(pageutility_newsaddtestarea, addtestarea);
+    	pageutility.send_Data_To_Element(pageutility_newsaddtestarea, addtotextarea);
     	//pageutility.send_data_to_element(pageutility_newsaddtestarea, "ABrainingsrtest");
 		return this;
     }
-    public NewsPage newscreate()
+    public NewsPage newsCreateButtonClick()
     {
-    	pageutility.click_on_element(pageutility_newscreate);
+    	pageutility.click_On_Element(pageutility_newscreate);
 		return this;
     	
     }
