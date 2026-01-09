@@ -2,7 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Suite">
-
+<listeners>  <!-- added for extent report -->
+<listener class-name="generateReport.Listeners"></listener> <!-- added for extent report -->
+ </listeners> <!-- added for extent report -->
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"></parameter>
     <classes>

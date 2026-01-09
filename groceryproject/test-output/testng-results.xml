@@ -1,190 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-08T13:33:41 GMT" name="Suite" finished-at="2026-01-08T13:35:56 GMT" duration-ms="134674">
+  <suite started-at="2026-01-09T07:36:13 GMT" name="ChromeTestngMethodsParallelTestingSuite" finished-at="2026-01-09T07:36:25 GMT" duration-ms="12100">
     <groups>
       <group name="regression">
-        <method signature="LoginTest.verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@5fe94a96]" name="verifyloginWithValidCredentails" class="testscript.LoginTest"/>
+        <method signature="LoginTest.verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@3270d194]" name="verifyloginWithValidCredentails" class="testscript.LoginTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2026-01-08T13:33:41 GMT" name="Test" finished-at="2026-01-08T13:35:56 GMT" duration-ms="134674">
-      <class name="testscript.CategoryTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.CategoryTest@7586beff]" started-at="2026-01-08T13:35:46 GMT" name="browserInitialization" finished-at="2026-01-08T13:35:51 GMT" duration-ms="5034" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyCategoryPageAdd()[pri:1, instance:testscript.CategoryTest@7586beff]" started-at="2026-01-08T13:35:51 GMT" name="verifyCategoryPageAdd" description="verifyCategoryPageAdd" finished-at="2026-01-08T13:35:56 GMT" duration-ms="4352" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCategoryPageAdd -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@7586beff]" started-at="2026-01-08T13:35:56 GMT" name="browserClose" finished-at="2026-01-08T13:35:56 GMT" duration-ms="161" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCategoryPageAdd status=SUCCESS method=CategoryTest.verifyCategoryPageAdd()[pri:1, instance:testscript.CategoryTest@7586beff] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-      </class> <!-- testscript.CategoryTest -->
-      <class name="com.demogrocery.app.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.demogrocery.app.AppTest@59474f18]" started-at="2026-01-08T13:33:41 GMT" name="shouldAnswerWithTrue" finished-at="2026-01-08T13:33:41 GMT" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-      </class> <!-- com.demogrocery.app.AppTest -->
-      <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.NewsTest@4c402120]" started-at="2026-01-08T13:35:03 GMT" name="browserInitialization" finished-at="2026-01-08T13:35:07 GMT" duration-ms="3251" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyNewsIsCreated()[pri:1, instance:testscript.NewsTest@4c402120]" started-at="2026-01-08T13:35:07 GMT" name="verifyNewsIsCreated" description="verifyNewsIsCreated" finished-at="2026-01-08T13:35:10 GMT" duration-ms="3723" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewsIsCreated -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@4c402120]" started-at="2026-01-08T13:35:10 GMT" name="browserClose" finished-at="2026-01-08T13:35:11 GMT" duration-ms="202" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNewsIsCreated status=SUCCESS method=NewsTest.verifyNewsIsCreated()[pri:1, instance:testscript.NewsTest@4c402120] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-      </class> <!-- testscript.NewsTest -->
-      <class name="testscript.ContactTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ContactTest@4c12331b]" started-at="2026-01-08T13:35:36 GMT" name="browserInitialization" finished-at="2026-01-08T13:35:40 GMT" duration-ms="4533" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyContactPageUpdate()[pri:1, instance:testscript.ContactTest@4c12331b]" started-at="2026-01-08T13:35:40 GMT" name="verifyContactPageUpdate" description="verifyContactPageUpdate" finished-at="2026-01-08T13:35:46 GMT" duration-ms="5815" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactPageUpdate -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@4c12331b]" started-at="2026-01-08T13:35:46 GMT" name="browserClose" finished-at="2026-01-08T13:35:46 GMT" duration-ms="170" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyContactPageUpdate status=SUCCESS method=ContactTest.verifyContactPageUpdate()[pri:1, instance:testscript.ContactTest@4c12331b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-      </class> <!-- testscript.ContactTest -->
-      <class name="testscript.FooterTextTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.FooterTextTest@1165b38]" started-at="2026-01-08T13:35:27 GMT" name="browserInitialization" finished-at="2026-01-08T13:35:31 GMT" duration-ms="4223" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyFooterTextUpdate()[pri:1, instance:testscript.FooterTextTest@1165b38]" started-at="2026-01-08T13:35:31 GMT" name="verifyFooterTextUpdate" description="verifyFooterTextUpdate" finished-at="2026-01-08T13:35:35 GMT" duration-ms="4355" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFooterTextUpdate -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@1165b38]" started-at="2026-01-08T13:35:35 GMT" name="browserClose" finished-at="2026-01-08T13:35:36 GMT" duration-ms="180" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyFooterTextUpdate status=SUCCESS method=FooterTextTest.verifyFooterTextUpdate()[pri:1, instance:testscript.FooterTextTest@1165b38] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-      </class> <!-- testscript.FooterTextTest -->
-      <class name="testscript.AdminTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminTest@5b12b668]" started-at="2026-01-08T13:35:18 GMT" name="browserInitialization" finished-at="2026-01-08T13:35:22 GMT" duration-ms="4369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyAdminusersSave()[pri:1, instance:testscript.AdminTest@5b12b668]" started-at="2026-01-08T13:35:22 GMT" name="verifyAdminusersSave" description="verifyAdminusersSave" finished-at="2026-01-08T13:35:27 GMT" duration-ms="4426" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAdminusersSave -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@5b12b668]" started-at="2026-01-08T13:35:27 GMT" name="browserClose" finished-at="2026-01-08T13:35:27 GMT" duration-ms="186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAdminusersSave status=SUCCESS method=AdminTest.verifyAdminusersSave()[pri:1, instance:testscript.AdminTest@5b12b668] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-      </class> <!-- testscript.AdminTest -->
-      <class name="testscript.LogoutTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@327514f]" started-at="2026-01-08T13:35:11 GMT" name="browserInitialization" finished-at="2026-01-08T13:35:14 GMT" duration-ms="3804" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifylogout()[pri:1, instance:testscript.LogoutTest@327514f]" started-at="2026-01-08T13:35:14 GMT" name="verifylogout" description="verifylogout" finished-at="2026-01-08T13:35:18 GMT" duration-ms="3249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifylogout -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@327514f]" started-at="2026-01-08T13:35:18 GMT" name="browserClose" finished-at="2026-01-08T13:35:18 GMT" duration-ms="181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifylogout status=SUCCESS method=LogoutTest.verifylogout()[pri:1, instance:testscript.LogoutTest@327514f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-      </class> <!-- testscript.LogoutTest -->
+    <test started-at="2026-01-09T07:36:13 GMT" name="ChromeTest" finished-at="2026-01-09T07:36:25 GMT" duration-ms="12100">
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:33:41 GMT" name="browserInitialization" finished-at="2026-01-08T13:34:45 GMT" duration-ms="63951" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:13 GMT" name="browserInitialization" finished-at="2026-01-09T07:36:18 GMT" duration-ms="4905" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,22 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:45 GMT" name="verifyloginWithValidCredentails" description="verifyloginWithValidCredentails" finished-at="2026-01-08T13:34:50 GMT" duration-ms="5036" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyloginWithValidCredentails -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:50 GMT" name="browserClose" finished-at="2026-01-08T13:34:50 GMT" duration-ms="232" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyloginWithValidCredentails status=SUCCESS method=LoginTest.verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:50 GMT" name="browserInitialization" finished-at="2026-01-08T13:34:54 GMT" duration-ms="3366" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:13 GMT" name="browserInitialization" finished-at="2026-01-09T07:36:18 GMT" duration-ms="4915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,67 +32,207 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginInvalidPassword()[pri:2, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:54 GMT" name="verifyloginInvalidPassword" description="verifyloginInvalidPassword" finished-at="2026-01-08T13:34:54 GMT" duration-ms="838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyloginInvalidPassword -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:54 GMT" name="browserClose" finished-at="2026-01-08T13:34:55 GMT" duration-ms="181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyloginInvalidPassword status=SUCCESS method=LoginTest.verifyloginInvalidPassword()[pri:2, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:55 GMT" name="browserInitialization" finished-at="2026-01-08T13:34:58 GMT" duration-ms="3367" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginInvalidUsername()[pri:3, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:58 GMT" name="verifyloginInvalidUsername" description="verifyloginInvalidUsername" finished-at="2026-01-08T13:34:59 GMT" duration-ms="910" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyloginInvalidUsername -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:59 GMT" name="browserClose" finished-at="2026-01-08T13:34:59 GMT" duration-ms="140" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyloginInvalidUsername status=SUCCESS method=LoginTest.verifyloginInvalidUsername()[pri:3, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:34:59 GMT" name="browserInitialization" finished-at="2026-01-08T13:35:02 GMT" duration-ms="3334" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginInvalidUsernamePassword()[pri:4, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:35:02 GMT" name="verifyloginInvalidUsernamePassword" description="verifyloginInvalidUsernamePassword" finished-at="2026-01-08T13:35:03 GMT" duration-ms="836" status="PASS">
+        <test-method signature="verifyloginInvalidUsernamePassword()[pri:4, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:18 GMT" name="verifyloginInvalidUsernamePassword" description="verifyloginInvalidUsernamePassword" finished-at="2026-01-09T07:36:18 GMT" duration-ms="277" status="FAIL">
+          <exception class="org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException">
+            <message>
+              <![CDATA[No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:159)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:157)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:313)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:287)
+at utilities.ExcelUtility.readStringData(ExcelUtility.java:21)
+at testscript.LoginTest.verifyloginInvalidUsernamePassword(LoginTest.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0x8068068a
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:770)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:150)
+... 24 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyloginInvalidUsernamePassword -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@5fe94a96]" started-at="2026-01-08T13:35:03 GMT" name="browserClose" finished-at="2026-01-08T13:35:03 GMT" duration-ms="176" status="PASS">
+        <test-method retried="true" signature="verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:18 GMT" name="verifyloginWithValidCredentails" description="verifyloginWithValidCredentails" finished-at="2026-01-09T07:36:18 GMT" duration-ms="370" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Stream Closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Stream Closed
+at java.base/java.io.FileInputStream.available0(Native Method)
+at java.base/java.io.FileInputStream.available(FileInputStream.java:473)
+at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:428)
+at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:197)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:627)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:1146)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:1098)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:1028)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:78)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:245)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:208)
+at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.<init>(ZipArchiveFakeEntry.java:83)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:98)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:157)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:351)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:64)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:313)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:287)
+at utilities.ExcelUtility.readStringData(ExcelUtility.java:21)
+at testscript.LoginTest.verifyloginWithValidCredentails(LoginTest.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginWithValidCredentails -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:18 GMT" name="browserClose" finished-at="2026-01-09T07:36:19 GMT" duration-ms="345" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyloginInvalidUsernamePassword status=SUCCESS method=LoginTest.verifyloginInvalidUsernamePassword()[pri:4, instance:testscript.LoginTest@5fe94a96] output={null}]]]>
+                <![CDATA[[TestResult name=verifyloginInvalidUsernamePassword status=FAILURE method=LoginTest.verifyloginInvalidUsernamePassword()[pri:4, instance:testscript.LoginTest@3270d194] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to stop.
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a56695979bdaf496ce02598427df68d8, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\jkann\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49927}, goog:processID: 14680, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49927/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a56695979bdaf496ce02598427df68d8, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\jkann\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49927}, goog:processID: 14680, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49927/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:458)
+at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:404)
+at testscript.Base.browserClose(Base.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:802)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:778)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@750eae0a[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3433a431[Wrapped task = org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x000001a6c11e6048@300c366f]] rejected from java.util.concurrent.ThreadPoolExecutor@14a6f1f4[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 47]
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:160)
+... 27 more
+Caused by: java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@750eae0a[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3433a431[Wrapped task = org.openqa.selenium.remote.http.jdk.JdkHttpClient$$Lambda/0x000001a6c11e6048@300c366f]] rejected from java.util.concurrent.ThreadPoolExecutor@14a6f1f4[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 47]
+at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.executeAsync(JdkHttpClient.java:384)
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:413)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:126)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:18 GMT" name="browserClose" finished-at="2026-01-09T07:36:19 GMT" duration-ms="229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyloginWithValidCredentails status=SKIP method=LoginTest.verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@3270d194] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:19 GMT" name="browserInitialization" finished-at="2026-01-09T07:36:22 GMT" duration-ms="3718" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:22 GMT" name="verifyloginWithValidCredentails" description="verifyloginWithValidCredentails" finished-at="2026-01-09T07:36:25 GMT" duration-ms="2549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginWithValidCredentails -->
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@3270d194]" started-at="2026-01-09T07:36:25 GMT" name="browserClose" finished-at="2026-01-09T07:36:25 GMT" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyloginWithValidCredentails status=SUCCESS method=LoginTest.verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@3270d194] output={null}]]]>
               </value>
             </param>
           </params>
@@ -289,6 +240,6 @@
           </reporter-output>
         </test-method> <!-- browserClose -->
       </class> <!-- testscript.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- ChromeTestngMethodsParallelTestingSuite -->
 </testng-results>

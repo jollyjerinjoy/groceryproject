@@ -28,6 +28,8 @@ public class Constant {
 	public static final String CONTACT_CREATE_FAILED = "Error occured: Contact updation failed.!";
 	public static final String FOOTERTEXT_CREATE_SUCCESS = "Contact Updated Successfully";
 	public static final String FOOTERTEXT_CREATE_FAILED = "Error occured: Contact updation failed.!";
+	public static final String NEWS_CREATE_SUCCESS = "News Created Successfully";
+	public static final String NEWS_CREATE_FAILED = "Error occured: News Creation failed!";
 	
 	public static final String CONFIGFILE = System.getProperty("user.dir")
 			+ "\\src\\main\\resources\\config.properties";

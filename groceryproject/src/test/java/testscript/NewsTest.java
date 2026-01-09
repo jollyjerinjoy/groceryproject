@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.AdminPage;
 import pages.LoginPage;
 import pages.LogoutPage;
@@ -42,6 +43,11 @@ public class NewsTest extends Base {
 
 		// newspage.newscreate();
 		boolean alertpage = newspage.isAlertDisplayed();
+		if (!alertpage) {
+		    Assert.fail(Constant.NEWS_CREATE_FAILED);
+		}
+		Assert.assertTrue(alertpage, Constant.NEWS_CREATE_SUCCESS);
+
 		Assert.assertTrue(alertpage, "News Created Successfully"); // hard assertion , classname.methodname
 
 		// boolean dashboardpage=loginpage.isHomePageDisplayed();
