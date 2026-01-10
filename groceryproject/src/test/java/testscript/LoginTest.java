@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import constant.Constant;
@@ -75,10 +76,10 @@ public class LoginTest extends Base {
 		Assert.assertTrue(alertpage,Constant.NOLOGIN_WITH_INVALIDUSERNAME);
 	}
 
-	@Test(priority = 4, description ="verifyloginInvalidUsernamePassword")
-	public void verifyloginInvalidUsernamePassword() throws IOException {
-		String user = ExcelUtility.readStringData(4, 0, "LoginPage");
-		String passwd = ExcelUtility.readStringData(4, 1, "LoginPage");
+	@Test(priority = 4, description ="verifyloginInvalidUsernamePassword", dataProvider="LoginProvider")  //dataprovider
+	public void verifyloginInvalidUsernamePassword(String user, String passwd) throws IOException {
+		//String user = ExcelUtility.readStringData(4, 0, "LoginPage");   for dataprovider commented
+		//String passwd = ExcelUtility.readStringData(4, 1, "LoginPage");  for dataprovider commented
 		// String user="admin243546w"; //webelement, method in page class
 		// String passwd="admindsdsdw";
 		LoginPage loginpage = new LoginPage(driver); // pass value from test class to page class
@@ -92,5 +93,13 @@ public class LoginTest extends Base {
 		Assert.fail(Constant.LOGIN_WITH_INVALIDUSERNAMEPASSWORD); // hard assertion , classname.methodname
 	}
 		Assert.assertTrue(alertpage,Constant.NOLOGIN_WITH_INVALIDUSERNAMEPASSWORD);
+	}
+	
+	@DataProvider(name="LoginProvider")  //dataprovider
+	public Object[][] getDataFromTestData() throws IOException{
+		return new Object[][] {{ExcelUtility.readStringData(4, 0,"loginpage"),ExcelUtility.readStringData(4,1,"loginpage")}};
+	//	return new Object[][] {{ExcelUtility.readStringData(7, 0,"loginpage"),ExcelUtility.readStringData(7,1,"loginpage")}};
+	
+	
 	}
 }
