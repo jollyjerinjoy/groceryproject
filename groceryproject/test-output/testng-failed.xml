@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="methods" name="Failed suite [ChromeTestngMethodsParallelTestingSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="ChromeTest(failed)">
+<suite parallel="tests" name="Failed suite [MultiBrowsertestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testscript.LoginTest">
         <methods>
           <include name="verifyloginInvalidUsernamePassword"/>
+          <include name="verifyloginInvalidPassword"/>
           <include name="verifyloginWithValidCredentails"/>
-          <include name="browserClose"/>
+          <include name="verifyloginInvalidUsername"/>
           <include name="browserInitialization"/>
+          <include name="browserClose"/>
         </methods>
       </class> <!-- testscript.LoginTest -->
+      <class name="testscript.CategoryTest">
+        <methods>
+          <include name="browserClose"/>
+          <include name="browserInitialization"/>
+          <include name="verifyCategoryPageAdd"/>
+        </methods>
+      </class> <!-- testscript.CategoryTest -->
+      <class name="testscript.AdminTest">
+        <methods>
+          <include name="browserClose"/>
+          <include name="browserInitialization"/>
+          <include name="verifyAdminusersSave"/>
+        </methods>
+      </class> <!-- testscript.AdminTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
-</suite> <!-- Failed suite [ChromeTestngMethodsParallelTestingSuite] -->
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testscript.AdminTest">
+        <methods>
+          <include name="browserInitialization"/>
+          <include name="browserClose"/>
+          <include name="verifyAdminusersSave"/>
+        </methods>
+      </class> <!-- testscript.AdminTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [MultiBrowsertestSuite] -->
