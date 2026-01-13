@@ -3,7 +3,9 @@ package constant;
 public class Constant {
 	public static final String TESTDATAFILE = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData.xlsx";
 	public static final String SUPERMART = System.getProperty("user.dir") + "\\src\\test\\resources\\supermart.jpg";
-	
+	//public static final String IMAGEFILE = System.getProperty("user.dir") + "\\src\\test\\resources\\Apple.jpg";
+    //	public static final String SUPERMART1="C:\\Users\\jkann\\git\\groceryproject\\groceryproject\\src\\test\\resources\\supermart.jpg";
+	//public static final String SUPERMART = System.getProperty("user.dir") + "\\src\\test\\resources\\supermart.jpg";
 	public static final String LOGIN_WITHVALIDCREDENTIALS ="Pass:Success login with correct username and password";
 	public static final String NOLOGIN_WITHVALIDCREDENTIALS =  "Fail:Error occured: failed to login with correct username and password";
 	
@@ -23,7 +25,7 @@ public class Constant {
 	public static final String ADMIN_CREATE_SUCCESS = "User Created Successfully";
 	public static final String ADMIN_CREATE_FAILED = "Error occured: Username already exists.!";
 	public static final String CATEGORY_CREATE_SUCCESS = "Category Created Successfully";
-	public static final String CATEGORY_CREATE_FAILED = "Error occured: Category Creation failed.!";
+	public static final String CATEGORY_CREATE_FAILED = "Error occured: Category already exists.!";
 	public static final String CONTACT_CREATE_SUCCESS = "Contact Updated Successfully";
 	public static final String CONTACT_CREATE_FAILED = "Error occured: Contact updation failed.!";
 	public static final String FOOTERTEXT_CREATE_SUCCESS = "Contact Updated Successfully";

@@ -26,7 +26,7 @@ public class CategoryTest extends Base {
 	LogoutPage logoutpage; // =new LogoutPage(driver);
 	CategoryPage categorypage;
 
-	@Test(priority = 1, description ="verifyCategoryPageAdd")
+	@Test(priority = 1, description ="To Add Category")
 	public void verifyCategoryPageAdd() throws IOException, AWTException {
 		// String user="admin"; //webelement, method in page class
 		// String passwd="admin";
@@ -43,9 +43,12 @@ public class CategoryTest extends Base {
 		// logoutpage.returnhomepage();
 		categorypage = logoutpage.ManageCategoryPageMoreInfo();
 		// CategoryPage categorypage=new CategoryPage(driver);
-
-		categorypage.categoryPageNewButtonClick().categoryPageAddCategoryText("testCategory").categoryPageFileUpload()
+		RandomUtility randomutility = new RandomUtility();
+		String uniqueCategory = RandomUtility.getUniqueText("testCategory");
+		categorypage.categoryPageNewButtonClick().categoryPageAddCategoryText(uniqueCategory).categoryPageSelectDiscountGroup().categoryPageFileUpload()
 				.categoryPageCreateButtonClick();
+		//System.out.println("=== PAGE SOURCE ===");
+		//System.out.println(driver.getPageSource());
 //		categorypage.ManageCategoryPageMoreInfo();
 //		categorypage.CategoryPageNew();
 //
@@ -55,18 +58,19 @@ public class CategoryTest extends Base {
 //
 //		categorypage.CategoryPagefileupload();
 //		categorypage.CategoryPagecreate();					
-//boolean alertpage= categorypage.isAlertDisplayed();
-	//	 Assert.assertTrue(alertpage, "Category Created Successfully"); //hard assertion ,
-		// classname.methodname
+//boolean alertpage= categorypage.isAlertDisplayed();// classname.methodname
+//	 Assert.assertTrue(alertpage, Constant.CATEGORY_CREATE_SUCCESS); //hard assertion ,
+		
 
 
-//boolean alertpage= categorypage.isAlertDisplayed();
-//if (!alertpage) {
-//    Assert.fail(Constant.CATEGORY_CREATE_FAILED);
-//}
-//Assert.assertTrue(alertpage, Constant.CATEGORY_CREATE_SUCCESS);
+		boolean alertpage= categorypage.isAlertDisplayed();
+		if (!alertpage) {
+		    Assert.fail(Constant.CATEGORY_CREATE_FAILED);
+		}
+		Assert.assertTrue(alertpage, Constant.CATEGORY_CREATE_SUCCESS);
 
-//	}
+			}
+
 
 }
-}
+

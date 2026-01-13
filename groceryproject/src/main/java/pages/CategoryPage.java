@@ -40,19 +40,23 @@ public class CategoryPage {
 	WebElement discountGroup;
 	@FindBy(xpath = "//button[@title='Move Right']")
 	WebElement moveRightButton;
+	
+@FindBy(xpath = "//li[@id='134-selectable']") WebElement groupname;
 
 	// @FindBy(xpath="//button[contains(@class,'move-right')]")WebElement
 	// moveRightButton;
 
 	// @FindBy(id="grp_id")WebElement groupSelect;
 
-	@FindBy(xpath = "//input[@id='main_img']")
-	WebElement fileuploadutility_CategoryPagefileuploadChoosefile;
-
-	@FindBy(xpath = "//button[@name='create']")
-	WebElement pageutilty_CategoryPagecreate;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement alert; // User Created Successfully
+	@FindBy(xpath = "//input[@id='main_img']") WebElement fileuploadutility_CategoryPagefileuploadChoosefile;
+	@FindBy(xpath = "//button[@type='submit']") WebElement pageutilty_CategoryPagecreate;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']") WebElement alert;
+	
+	
+	
+	
+	//alert-success   'alert alert-success alert-dismissible']
+	 // User Created Successfully
 
 	public CategoryPage(WebDriver driver) {
 		this.driver = driver; // assign current class driver to global driver
@@ -101,20 +105,26 @@ public class CategoryPage {
 		// pageutility.click_on_element(moveRightButton);
 
 		// select discount
-		waitutility.waitForElementToBeClickable(driver, discountGroup);
-		discountGroup.click();
+//	waitutility.waitForElementToBeClickable(driver, discountGroup);
+//	discountGroup.click();
 
 		// wait & click right arrow
-		waitutility.waitForElementToBeClickable(driver, moveRightButton);
-		moveRightButton.click();
+//	waitutility.waitForElementToBeClickable(driver, moveRightButton);
+//	moveRightButton.click();
+		
+		
+	//	pageutility.clickByJS(groupname);
+		groupname.click();
+	//	pageutility.actionClick(groupname);
+		
 		return this;
 	}
 
 	public CategoryPage categoryPageFileUpload() throws AWTException {
 		// fileuploadutility.FileUploadusingRobotclass(fileuploadutility_CategoryPagefileuploadChoosefile,Constant.SUPERMART);
-		// pageutility.click_on_element(fileuploadutility_CategoryPagefileuploadChoosefile);
-		fileuploadutility.FileUploadusingSendkeys(fileuploadutility_CategoryPagefileuploadChoosefile,
-				Constant.SUPERMART);
+		//pageutility.click_On_Element(fileuploadutility_CategoryPagefileuploadChoosefile,Constant.SUPERMART);
+		pageutility.JSscrollToElement(fileuploadutility_CategoryPagefileuploadChoosefile);
+		fileuploadutility.FileUploadusingSendkeys(fileuploadutility_CategoryPagefileuploadChoosefile,Constant.SUPERMART);
 		return this;
 
 	}
@@ -122,8 +132,10 @@ public class CategoryPage {
 	public CategoryPage categoryPageCreateButtonClick() {
 		// pageutility.click_on_element(pageutilty_ContactPageUpdate);
 		pageutility.JSscrollToElement(pageutilty_CategoryPagecreate);
-		// pageutility.click_on_element(pageutilty_CategoryPagecreate);
-		// pageutility.actionclick(pageutilty_CategoryPagecreate);
+		waitutility.waitForElementToBeClickable(driver, pageutilty_CategoryPagecreate);
+		//pageutilty_CategoryPagecreate.click();
+		//pageutility.click_On_Element(pageutilty_CategoryPagecreate);
+		 //pageutility.actionClick(pageutilty_CategoryPagecreate);
 		pageutility.clickByJS(pageutilty_CategoryPagecreate);
 		return this;
 
@@ -131,7 +143,7 @@ public class CategoryPage {
 
 	public boolean isAlertDisplayed() {
 		// return alert.isDisplayed();
-		return pageutility.alert_isDisplayed(alert); // Updated Successfully
+		return pageutility.alert_isDisplayed(alert); // Category Created Successfully
 	}
 
 }
