@@ -16,3 +16,7 @@ public class Retry implements IRetryAnalyzer {
 		return false;
 	}
 }
+
+//Uses ITestRetryAnalyzer.
+//Automatically re-executes failed test cases.
+//Helps handle flaky test failures.

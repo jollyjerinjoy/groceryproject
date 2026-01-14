@@ -64,10 +64,10 @@ public class CategoryTest extends Base {
 
 
 		boolean alertpage= categorypage.isAlertDisplayed();
-		if (!alertpage) {
-		    Assert.fail(Constant.CATEGORY_CREATE_FAILED);
-		}
-		Assert.assertTrue(alertpage, Constant.CATEGORY_CREATE_SUCCESS);
+	//	if (!alertpage) {
+	//	    Assert.fail(Constant.CATEGORY_CREATE_FAILED);
+	//	}
+		Assert.assertTrue(alertpage, Constant.CATEGORY_CREATE_FAILED);
 
 			}
 

@@ -28,3 +28,6 @@ public class FileUploadUtility {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 }
+//Handles file uploads using:
+//    sendKeys
+//    Robot class for keyboard actions

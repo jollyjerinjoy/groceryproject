@@ -91,3 +91,15 @@ public class Listeners implements ITestListener {
 		extent.flush();
 	}
 }
+
+//Custom TestNG Listener class implements ITestListener.
+//Handles:
+	//Test start
+	//Test success
+	//Test failure
+//Integrated with Extent Reports:
+//Report is created
+//Test details are added
+//Screenshot attached on failure
+//report.flush() generates the final report
+

@@ -77,3 +77,10 @@ public class Base {
 	}
 
 }
+//
+//Collection of test classes.
+//Base Class
+//Manages: Browser setup, Driver initialization, i.e steps that run before and after test execution –
+ //uses @Parameters, @BeforeMethod, @AfterMethod annotation. 
+//This teardown method runs after every test, captures a screenshot if the test fails using TestNG’s ITestResult, and then closes the browser to ensure clean execution
+//All test classes extend the base class.

@@ -41,3 +41,7 @@ public class WaitUtility {
 	}
 	
 }
+//Handles synchronization issues using:
+//    Implicit Wait (base level)
+//    Explicit Wait (condition-based)
+//    Fluent Wait (polling-based, flexible)

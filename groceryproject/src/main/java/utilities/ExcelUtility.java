@@ -37,5 +37,13 @@ public class ExcelUtility {
 		return String.valueOf(val); // convert int to string using valueOf() method
 		// return val;
 	}
+  //  Excel Utility
+  //  Used for data-driven testing.
+  //  Reads test data dynamically from Excel files.
+  //  Two main methods:
+  //         Read String data
+   //        Read Integer data
+   // Data is passed dynamically to test classes.
+
 
 }

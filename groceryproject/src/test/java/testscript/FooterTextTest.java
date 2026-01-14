@@ -60,10 +60,10 @@ public class FooterTextTest extends Base {
 	//	Assert.assertTrue(alertpage, "Footer Text Updated Successfully"); // hard assertion , classname.methodname
 
 		boolean alertpage= footertextpage.isAlertDisplayed();
-		if (!alertpage) {
-		    Assert.fail(Constant.FOOTERTEXT_CREATE_FAILED);
-		}
-		Assert.assertTrue(alertpage, Constant.FOOTERTEXT_CREATE_SUCCESS);
+	//	if (!alertpage) {
+	//	    Assert.fail(Constant.FOOTERTEXT_CREATE_FAILED);
+	//	}
+		Assert.assertTrue(alertpage, Constant.FOOTERTEXT_CREATE_FAILED);
 
 			}
 		

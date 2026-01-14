@@ -35,3 +35,6 @@ public class FakerUtility {
 
 	}
 }
+//Generates random fake test data:
+//    Names, Emails, Phone numbers
+//    Useful for avoiding duplicate data issues.

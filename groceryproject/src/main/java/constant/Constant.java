@@ -19,18 +19,18 @@ public class Constant {
 	public static final String LOGIN_WITH_INVALIDUSERNAMEPASSWORD = "Fail:Error occured: logged in  with incorrect username and password";
 	public static final String NOLOGIN_WITH_INVALIDUSERNAMEPASSWORD = "Pass:Login failed gracefully with  incorrect username and password";
 	
-	public static final String LOGOUT_SUCCESS = "Default relogin page displayed to login.";  
+	//public static final String LOGOUT_SUCCESS = "Default relogin page displayed to login.";  
 	public static final String LOGOUT_FAILURE = "Error occured: logout failed, still logged in  state";
 	
-	public static final String ADMIN_CREATE_SUCCESS = "User Created Successfully";
+	//public static final String ADMIN_CREATE_SUCCESS = "User Created Successfully";
 	public static final String ADMIN_CREATE_FAILED = "Error occured: Username already exists.!";
-	public static final String CATEGORY_CREATE_SUCCESS = "Category Created Successfully";
+	//public static final String CATEGORY_CREATE_SUCCESS = "Category Created Successfully";
 	public static final String CATEGORY_CREATE_FAILED = "Error occured: Category already exists.!";
-	public static final String CONTACT_CREATE_SUCCESS = "Contact Updated Successfully";
+	//public static final String CONTACT_CREATE_SUCCESS = "Contact Updated Successfully";
 	public static final String CONTACT_CREATE_FAILED = "Error occured: Contact updation failed.!";
-	public static final String FOOTERTEXT_CREATE_SUCCESS = "Contact Updated Successfully";
+	//public static final String FOOTERTEXT_CREATE_SUCCESS = "Contact Updated Successfully";
 	public static final String FOOTERTEXT_CREATE_FAILED = "Error occured: Contact updation failed.!";
-	public static final String NEWS_CREATE_SUCCESS = "News Created Successfully";
+	//public static final String NEWS_CREATE_SUCCESS = "News Created Successfully";
 	public static final String NEWS_CREATE_FAILED = "Error occured: News Creation failed!";
 	
 	public static final String CONFIGFILE = System.getProperty("user.dir")
@@ -38,3 +38,14 @@ public class Constant {
 
 	// not able to change, modify
 }
+
+//src/main/java – Core Framework 
+//a) constant Package
+//        Contains a Constant class.
+//          Used to store:
+//           Application URLs
+//           File paths
+//           Timeouts
+ //          Error messages
+  //                        All variables are declared as public static final, so: Values cannot be modified. Centralized and reusable
+

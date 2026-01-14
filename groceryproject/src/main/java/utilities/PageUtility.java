@@ -95,3 +95,12 @@ public class PageUtility {
 
 	// action , javascript
 }
+//Common helper class to interact with WebElements.
+//Avoids duplicate code in page classes.
+//Includes:
+//     Click
+//     SendKeys
+//     Actions class methods
+//     JavaScript Executor methods
+
+//

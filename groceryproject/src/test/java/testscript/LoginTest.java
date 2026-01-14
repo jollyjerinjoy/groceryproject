@@ -26,11 +26,11 @@ public class LoginTest extends Base {
 		loginpage.enterThePasword(passwd); // calling page methods, passvalue
 		loginpage.signin();
 		boolean dashboardpage = loginpage.isHomePageDisplayed();
-		if (!dashboardpage)
-		{
-			Assert.fail(Constant.NOLOGIN_WITHVALIDCREDENTIALS);
-		}
-		Assert.assertTrue(dashboardpage,Constant.LOGIN_WITHVALIDCREDENTIALS); // hard assertion , classname.methodname
+	//	if (!dashboardpage)
+	//	{
+		//	Assert.fail(Constant.NOLOGIN_WITHVALIDCREDENTIALS);
+		//}
+		Assert.assertTrue(dashboardpage,Constant.NOLOGIN_WITHVALIDCREDENTIALS); // hard assertion , classname.methodname
 		// FakerUtility fakerutility=new FakerUtility();
 		// String user=fakerutility.creatARandomFirstName();
 		// String passwd=fakerutility.creatARandomFirstName();
@@ -50,11 +50,11 @@ public class LoginTest extends Base {
 		loginpage.signin();
 
 		boolean alertpage = loginpage.isAlertDisplayed();
-		if (!alertpage)
-		{
-			Assert.fail(Constant.LOGIN_WITHINVALIDPASSOWRD);
-		}
-		Assert.assertTrue(alertpage, Constant.NOLOGIN_WITH_INVALIDPASSOWRD); // hard assertion , classname.methodname
+	///	if (!alertpage)
+	//	{
+	//		Assert.fail(Constant.LOGIN_WITHINVALIDPASSOWRD);
+	//	}
+		Assert.assertTrue(alertpage, Constant.LOGIN_WITHINVALIDPASSOWRD); // hard assertion , classname.methodname
 	}
 
 	@Test(priority = 3, description ="verifyloginInvalidUsername")
@@ -69,11 +69,11 @@ public class LoginTest extends Base {
 		loginpage.enterThePasword(passwd); // calling page methods, passvalue
 		loginpage.signin();
 		boolean alertpage = loginpage.isAlertDisplayed();
-		if(!alertpage)
-		{
-		Assert.fail(Constant.LOGIN_WITH_INVALIDUSERNAME); // hard assertion , classname.methodname
-	}
-		Assert.assertTrue(alertpage,Constant.NOLOGIN_WITH_INVALIDUSERNAME);
+	//	if(!alertpage)
+	//	{
+		//Assert.fail(Constant.LOGIN_WITH_INVALIDUSERNAME); // hard assertion , classname.methodname
+	//}
+		Assert.assertTrue(alertpage,Constant.LOGIN_WITH_INVALIDUSERNAME);
 	}
 
 	@Test(priority = 4, description ="verifyloginInvalidUsernamePassword", dataProvider="LoginProvider")  //dataprovider
@@ -88,11 +88,11 @@ public class LoginTest extends Base {
 		loginpage.signin();
 		boolean alertpage = loginpage.isAlertDisplayed();
 		//Assert.assertTrue(alertpage,Constant.LOGININVALIDUSERNAMEPASSWORD); // hard assertion , classname.methodname
-		if(!alertpage)
-		{
-		Assert.fail(Constant.LOGIN_WITH_INVALIDUSERNAMEPASSWORD); // hard assertion , classname.methodname
-	}
-		Assert.assertTrue(alertpage,Constant.NOLOGIN_WITH_INVALIDUSERNAMEPASSWORD);
+	//	if(!alertpage)
+	//	{
+	//	Assert.fail(Constant.LOGIN_WITH_INVALIDUSERNAMEPASSWORD); // hard assertion , classname.methodname
+	//}
+		Assert.assertTrue(alertpage,Constant.LOGIN_WITH_INVALIDUSERNAMEPASSWORD);
 	}
 	
 	@DataProvider(name="LoginProvider")  //dataprovider

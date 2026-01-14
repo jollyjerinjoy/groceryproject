@@ -26,3 +26,8 @@ public class ScreenshotUtility {
 		FileHandler.copy(screenShot, finalDestination);
 	}
 }
+
+//Captures screenshots on test failure.
+//Uses TakesScreenshot interface.
+//Helps in debugging failed test cases.
+

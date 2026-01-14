@@ -78,3 +78,10 @@ public class AdminPage {
 		return pageutility.alert_isDisplayed(alert);
 	}
 }
+//pages Package (Page Object Model) 
+//Contains Page classes for each application screen.
+//Each Page class includes:
+//  WebElements defined using @FindBy annotation
+ // Page methods for user interactions
+ // Page Factory initializes elements for better performance and readability.
+ //           This improves:    Code reusability, Maintainability, Reduced duplication

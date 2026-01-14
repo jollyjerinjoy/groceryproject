@@ -55,12 +55,17 @@ public class AdminTest extends Base {
 		//LogoutPage logoutpage = new LogoutPage(driver);
 		//logoutpage.returnHomePage();
 		boolean alertpage = adminpage.isAlertDisplayed();
-		if (!alertpage) {
-		    Assert.fail(Constant.ADMIN_CREATE_FAILED);
-		}
-		Assert.assertTrue(alertpage, Constant.ADMIN_CREATE_SUCCESS);
+		//if (!alertpage) {
+	//	    Assert.fail(Constant.ADMIN_CREATE_FAILED);
+	//	}
+		Assert.assertTrue(alertpage, Constant.ADMIN_CREATE_FAILED);
 
 		
 	}
 
 }
+
+//Test Classes
+//Test class Uses @Test annotation with priority, description, groups, retryAnalyzer 
+//Assertions are added at the end of test cases
+

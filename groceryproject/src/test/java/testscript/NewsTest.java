@@ -43,12 +43,12 @@ public class NewsTest extends Base {
 
 		// newspage.newscreate();
 		boolean alertpage = newspage.isAlertDisplayed();
-		if (!alertpage) {
-		    Assert.fail(Constant.NEWS_CREATE_FAILED);
-		}
-		Assert.assertTrue(alertpage, Constant.NEWS_CREATE_SUCCESS);
+	//	if (!alertpage) {
+	//	    Assert.fail(Constant.NEWS_CREATE_FAILED);
+	//	}
+		Assert.assertTrue(alertpage, Constant.NEWS_CREATE_FAILED);
 
-		Assert.assertTrue(alertpage, "News Created Successfully"); // hard assertion , classname.methodname
+	//	Assert.assertTrue(alertpage, "News Created Successfully"); // hard assertion , classname.methodname
 
 		// boolean dashboardpage=loginpage.isHomePageDisplayed();
 		// Assert.assertTrue(dashboardpage); //hard assertion , classname.methodname

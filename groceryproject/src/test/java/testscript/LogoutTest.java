@@ -30,11 +30,11 @@ public class LogoutTest extends Base {
 		//logoutpage.nav_Item_Dropdown();
 		//logoutpage.logout();
 		boolean logindefaultpage = logoutpage.isLoginReloginpageDisplayed();
-		if(!logindefaultpage)
-		{
-			Assert.fail(Constant.LOGOUT_FAILURE);
-		}
-		Assert.assertTrue(logindefaultpage,Constant.LOGOUT_SUCCESS); // hard assertion , classname.methodname
+	//	if(!logindefaultpage)
+	//	{
+	//		Assert.fail(Constant.LOGOUT_FAILURE);
+	//	}
+		Assert.assertTrue(logindefaultpage,Constant.LOGOUT_FAILURE ); // hard assertion , classname.methodname
 		// FakerUtility fakerutility=new FakerUtility();
 		// String user=fakerutility.creatARandomFirstName();
 		// String passwd=fakerutility.creatARandomFirstName();

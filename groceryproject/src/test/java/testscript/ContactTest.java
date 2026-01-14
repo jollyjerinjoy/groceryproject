@@ -69,10 +69,10 @@ public class ContactTest extends Base {
 	//	Assert.assertTrue(alertpage, "Contact Updated Successfully"); // hard assertion , classname.methodname
 
 		boolean alertpage= contactpage.isAlertDisplayed();
-		if (!alertpage) {
-		    Assert.fail(Constant.CONTACT_CREATE_FAILED);
-		}
-		Assert.assertTrue(alertpage, Constant.CONTACT_CREATE_SUCCESS);
+		//if (!alertpage) {
+	//	    Assert.fail(Constant.CONTACT_CREATE_FAILED);
+	//	}
+		Assert.assertTrue(alertpage, Constant.CONTACT_CREATE_FAILED);
 
 			}
 		
