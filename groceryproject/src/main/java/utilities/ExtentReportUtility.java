@@ -10,7 +10,7 @@ public class ExtentReportUtility {
 		 
 		String reportPath = System.getProperty("user.dir")
                 + "/target/extent-reports/extent-report.html";
-		  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath); //test
+		  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath); //testj
 
 	        reporter1.config().setReportName("7RMart Project Automation Report");
 
