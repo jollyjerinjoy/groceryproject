@@ -12,16 +12,16 @@ public class ExtentReportUtility {
               + "/target/extent-reports/extent-report.html";
 	  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath); //path
 //
-	    reporter1.config().setReportName("7RMart Project Automation Report");
+	    reporter1.config().setReportName("7RMart Project Automation Reportss");
 
 	//        extentReports.attachReporter(reporter1);
 	        //extentReports.setSystemInfo("Organization", "Obsqura");
 	       // extentReports.setSystemInfo("Tester", "Jolly");
 	       // extentReports.setSystemInfo("Tester", "Greesma");
 		
-		ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
-		reporter.config().setReportName("7RMart  Projects");
-		extentReports.attachReporter(reporter);
+	//	ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
+	//	reporter.config().setReportName("7RMartss  Projects Report");
+		extentReports.attachReporter(reporter1);
 		extentReports.setSystemInfo("Organizations", "Obsquras");
 		extentReports.setSystemInfo("Name", "Jolly");
 		extentReports.setSystemInfo("Name", "Greesma");
