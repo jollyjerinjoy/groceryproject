@@ -1,5 +1,11 @@
 package generateReport;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -85,11 +91,34 @@ public class Listeners implements ITestListener {
 		ITestListener.super.onStart(context);
 	}
 
+//	public void onFinish(ITestContext context) {
+//		ITestListener.super.onFinish(context);
+//		extent.flush();
+//	}
+	
+	
+	@Override
 	public void onFinish(ITestContext context) {
-
 		ITestListener.super.onFinish(context);
-		extent.flush();
+	    extent.flush();
+
+	    try {
+	        Path source = Paths.get(
+	            System.getProperty("user.dir")
+	            + "/target/extent-reports/extent-report.html");
+
+	        Path destination = Paths.get(
+	            System.getProperty("user.dir")
+	            + "/extent-reports/extent-report.html");
+
+	        Files.createDirectories(destination.getParent());
+	        Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
+
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
 	}
+	
 }
 
 //Custom TestNG Listener class implements ITestListener.
