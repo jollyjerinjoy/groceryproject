@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-14T21:33:11 GMT" name="Suite" finished-at="2026-01-14T21:34:54 GMT" duration-ms="102531">
+  <suite started-at="2026-01-14T22:03:59 GMT" name="Suite" finished-at="2026-01-14T22:05:51 GMT" duration-ms="111935">
     <groups>
       <group name="regression">
         <method signature="LoginTest.verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@9816741]" name="verifyloginWithValidCredentails" class="testscript.LoginTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2026-01-14T21:33:11 GMT" name="Test" finished-at="2026-01-14T21:34:54 GMT" duration-ms="102531">
+    <test started-at="2026-01-14T22:03:59 GMT" name="Test" finished-at="2026-01-14T22:05:51 GMT" duration-ms="111935">
       <class name="testscript.CategoryTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.CategoryTest@50f6ac94]" started-at="2026-01-14T21:34:45 GMT" name="browserInitialization" finished-at="2026-01-14T21:34:48 GMT" duration-ms="3756" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.CategoryTest@50f6ac94]" started-at="2026-01-14T22:05:42 GMT" name="browserInitialization" finished-at="2026-01-14T22:05:46 GMT" duration-ms="4564" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,11 +21,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyCategoryPageAdd()[pri:1, instance:testscript.CategoryTest@50f6ac94]" started-at="2026-01-14T21:34:48 GMT" name="verifyCategoryPageAdd" description="To Add Category" finished-at="2026-01-14T21:34:54 GMT" duration-ms="5277" status="PASS">
+        <test-method signature="verifyCategoryPageAdd()[pri:1, instance:testscript.CategoryTest@50f6ac94]" started-at="2026-01-14T22:05:46 GMT" name="verifyCategoryPageAdd" description="To Add Category" finished-at="2026-01-14T22:05:51 GMT" duration-ms="4792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCategoryPageAdd -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@50f6ac94]" started-at="2026-01-14T21:34:54 GMT" name="browserClose" finished-at="2026-01-14T21:34:54 GMT" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@50f6ac94]" started-at="2026-01-14T22:05:51 GMT" name="browserClose" finished-at="2026-01-14T22:05:51 GMT" duration-ms="215" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,13 +38,13 @@
         </test-method> <!-- browserClose -->
       </class> <!-- testscript.CategoryTest -->
       <class name="com.demogrocery.app.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.demogrocery.app.AppTest@45385f75]" started-at="2026-01-14T21:33:11 GMT" name="shouldAnswerWithTrue" finished-at="2026-01-14T21:33:11 GMT" duration-ms="14" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:com.demogrocery.app.AppTest@45385f75]" started-at="2026-01-14T22:03:59 GMT" name="shouldAnswerWithTrue" finished-at="2026-01-14T22:03:59 GMT" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- com.demogrocery.app.AppTest -->
       <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.NewsTest@64b0598]" started-at="2026-01-14T21:33:50 GMT" name="browserInitialization" finished-at="2026-01-14T21:33:54 GMT" duration-ms="3704" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.NewsTest@64b0598]" started-at="2026-01-14T22:04:39 GMT" name="browserInitialization" finished-at="2026-01-14T22:04:45 GMT" duration-ms="6401" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,11 +55,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyNewsIsCreated()[pri:1, instance:testscript.NewsTest@64b0598]" started-at="2026-01-14T21:33:54 GMT" name="verifyNewsIsCreated" description="verifyNewsIsCreated" finished-at="2026-01-14T21:33:58 GMT" duration-ms="3605" status="PASS">
+        <test-method signature="verifyNewsIsCreated()[pri:1, instance:testscript.NewsTest@64b0598]" started-at="2026-01-14T22:04:45 GMT" name="verifyNewsIsCreated" description="verifyNewsIsCreated" finished-at="2026-01-14T22:04:49 GMT" duration-ms="4142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewsIsCreated -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@64b0598]" started-at="2026-01-14T21:33:58 GMT" name="browserClose" finished-at="2026-01-14T21:33:58 GMT" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@64b0598]" started-at="2026-01-14T22:04:49 GMT" name="browserClose" finished-at="2026-01-14T22:04:49 GMT" duration-ms="187" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,7 +72,7 @@
         </test-method> <!-- browserClose -->
       </class> <!-- testscript.NewsTest -->
       <class name="testscript.ContactTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ContactTest@e3b3b2f]" started-at="2026-01-14T21:34:33 GMT" name="browserInitialization" finished-at="2026-01-14T21:34:37 GMT" duration-ms="4174" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ContactTest@e3b3b2f]" started-at="2026-01-14T22:05:29 GMT" name="browserInitialization" finished-at="2026-01-14T22:05:36 GMT" duration-ms="6768" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,11 +83,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyContactPageUpdate()[pri:1, instance:testscript.ContactTest@e3b3b2f]" started-at="2026-01-14T21:34:37 GMT" name="verifyContactPageUpdate" description="verifyContactPageUpdate" finished-at="2026-01-14T21:34:45 GMT" duration-ms="7467" status="PASS">
+        <test-method signature="verifyContactPageUpdate()[pri:1, instance:testscript.ContactTest@e3b3b2f]" started-at="2026-01-14T22:05:36 GMT" name="verifyContactPageUpdate" description="verifyContactPageUpdate" finished-at="2026-01-14T22:05:42 GMT" duration-ms="5368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactPageUpdate -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@e3b3b2f]" started-at="2026-01-14T21:34:45 GMT" name="browserClose" finished-at="2026-01-14T21:34:45 GMT" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.ContactTest@e3b3b2f]" started-at="2026-01-14T22:05:42 GMT" name="browserClose" finished-at="2026-01-14T22:05:42 GMT" duration-ms="171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,7 +100,7 @@
         </test-method> <!-- browserClose -->
       </class> <!-- testscript.ContactTest -->
       <class name="testscript.FooterTextTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.FooterTextTest@50029372]" started-at="2026-01-14T21:34:25 GMT" name="browserInitialization" finished-at="2026-01-14T21:34:29 GMT" duration-ms="4009" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.FooterTextTest@50029372]" started-at="2026-01-14T22:05:16 GMT" name="browserInitialization" finished-at="2026-01-14T22:05:23 GMT" duration-ms="7212" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,11 +111,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyFooterTextUpdate()[pri:1, instance:testscript.FooterTextTest@50029372]" started-at="2026-01-14T21:34:29 GMT" name="verifyFooterTextUpdate" description="verifyFooterTextUpdate" finished-at="2026-01-14T21:34:33 GMT" duration-ms="3685" status="PASS">
+        <test-method signature="verifyFooterTextUpdate()[pri:1, instance:testscript.FooterTextTest@50029372]" started-at="2026-01-14T22:05:23 GMT" name="verifyFooterTextUpdate" description="verifyFooterTextUpdate" finished-at="2026-01-14T22:05:29 GMT" duration-ms="6213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFooterTextUpdate -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@50029372]" started-at="2026-01-14T21:34:33 GMT" name="browserClose" finished-at="2026-01-14T21:34:33 GMT" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.FooterTextTest@50029372]" started-at="2026-01-14T22:05:29 GMT" name="browserClose" finished-at="2026-01-14T22:05:29 GMT" duration-ms="181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +128,7 @@
         </test-method> <!-- browserClose -->
       </class> <!-- testscript.FooterTextTest -->
       <class name="testscript.AdminTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminTest@3e2055d6]" started-at="2026-01-14T21:34:13 GMT" name="browserInitialization" finished-at="2026-01-14T21:34:21 GMT" duration-ms="8128" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminTest@3e2055d6]" started-at="2026-01-14T22:05:04 GMT" name="browserInitialization" finished-at="2026-01-14T22:05:11 GMT" duration-ms="7012" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,11 +139,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyAdminusersSave()[pri:1, instance:testscript.AdminTest@3e2055d6]" started-at="2026-01-14T21:34:21 GMT" name="verifyAdminusersSave" description="verifyAdminusersSave" finished-at="2026-01-14T21:34:25 GMT" duration-ms="3866" status="PASS">
+        <test-method signature="verifyAdminusersSave()[pri:1, instance:testscript.AdminTest@3e2055d6]" started-at="2026-01-14T22:05:11 GMT" name="verifyAdminusersSave" description="verifyAdminusersSave" finished-at="2026-01-14T22:05:16 GMT" duration-ms="4404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAdminusersSave -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@3e2055d6]" started-at="2026-01-14T21:34:25 GMT" name="browserClose" finished-at="2026-01-14T21:34:25 GMT" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@3e2055d6]" started-at="2026-01-14T22:05:16 GMT" name="browserClose" finished-at="2026-01-14T22:05:16 GMT" duration-ms="220" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
         </test-method> <!-- browserClose -->
       </class> <!-- testscript.AdminTest -->
       <class name="testscript.LogoutTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@18f8cd79]" started-at="2026-01-14T21:33:58 GMT" name="browserInitialization" finished-at="2026-01-14T21:34:09 GMT" duration-ms="10594" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@18f8cd79]" started-at="2026-01-14T22:04:49 GMT" name="browserInitialization" finished-at="2026-01-14T22:04:59 GMT" duration-ms="9288" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -167,11 +167,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifylogout()[pri:1, instance:testscript.LogoutTest@18f8cd79]" started-at="2026-01-14T21:34:09 GMT" name="verifylogout" description="verifylogout" finished-at="2026-01-14T21:34:12 GMT" duration-ms="3418" status="PASS">
+        <test-method signature="verifylogout()[pri:1, instance:testscript.LogoutTest@18f8cd79]" started-at="2026-01-14T22:04:59 GMT" name="verifylogout" description="verifylogout" finished-at="2026-01-14T22:05:04 GMT" duration-ms="5376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifylogout -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@18f8cd79]" started-at="2026-01-14T21:34:12 GMT" name="browserClose" finished-at="2026-01-14T21:34:13 GMT" duration-ms="922" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@18f8cd79]" started-at="2026-01-14T22:05:04 GMT" name="browserClose" finished-at="2026-01-14T22:05:04 GMT" duration-ms="166" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,7 +184,7 @@
         </test-method> <!-- browserClose -->
       </class> <!-- testscript.LogoutTest -->
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:11 GMT" name="browserInitialization" finished-at="2026-01-14T21:33:30 GMT" duration-ms="18732" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:03:59 GMT" name="browserInitialization" finished-at="2026-01-14T22:04:06 GMT" duration-ms="6929" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,11 +195,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:30 GMT" name="verifyloginWithValidCredentails" description="verifyloginWithValidCredentails" finished-at="2026-01-14T21:33:33 GMT" duration-ms="2465" status="PASS">
+        <test-method signature="verifyloginWithValidCredentails()[pri:1, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:06 GMT" name="verifyloginWithValidCredentails" description="verifyloginWithValidCredentails" finished-at="2026-01-14T22:04:10 GMT" duration-ms="3173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyloginWithValidCredentails -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:33 GMT" name="browserClose" finished-at="2026-01-14T21:33:33 GMT" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:10 GMT" name="browserClose" finished-at="2026-01-14T22:04:10 GMT" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,7 +210,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:33 GMT" name="browserInitialization" finished-at="2026-01-14T21:33:38 GMT" duration-ms="5408" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:10 GMT" name="browserInitialization" finished-at="2026-01-14T22:04:13 GMT" duration-ms="3290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,11 +221,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginInvalidPassword()[pri:2, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:38 GMT" name="verifyloginInvalidPassword" description="verifyloginInvalidPassword" finished-at="2026-01-14T21:33:39 GMT" duration-ms="697" status="PASS">
+        <test-method signature="verifyloginInvalidPassword()[pri:2, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:13 GMT" name="verifyloginInvalidPassword" description="verifyloginInvalidPassword" finished-at="2026-01-14T22:04:14 GMT" duration-ms="818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyloginInvalidPassword -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:39 GMT" name="browserClose" finished-at="2026-01-14T21:33:39 GMT" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:14 GMT" name="browserClose" finished-at="2026-01-14T22:04:14 GMT" duration-ms="183" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -236,7 +236,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:39 GMT" name="browserInitialization" finished-at="2026-01-14T21:33:45 GMT" duration-ms="5906" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:14 GMT" name="browserInitialization" finished-at="2026-01-14T22:04:18 GMT" duration-ms="3870" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,11 +247,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginInvalidUsername()[pri:3, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:45 GMT" name="verifyloginInvalidUsername" description="verifyloginInvalidUsername" finished-at="2026-01-14T21:33:46 GMT" duration-ms="634" status="PASS">
+        <test-method signature="verifyloginInvalidUsername()[pri:3, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:18 GMT" name="verifyloginInvalidUsername" description="verifyloginInvalidUsername" finished-at="2026-01-14T22:04:19 GMT" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyloginInvalidUsername -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:46 GMT" name="browserClose" finished-at="2026-01-14T21:33:46 GMT" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:19 GMT" name="browserClose" finished-at="2026-01-14T22:04:19 GMT" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -262,7 +262,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:46 GMT" name="browserInitialization" finished-at="2026-01-14T21:33:50 GMT" duration-ms="3711" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:19 GMT" name="browserInitialization" finished-at="2026-01-14T22:04:38 GMT" duration-ms="18851" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -273,7 +273,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyloginInvalidUsernamePassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:50 GMT" name="verifyloginInvalidUsernamePassword" description="verifyloginInvalidUsernamePassword" data-provider="LoginProvider" finished-at="2026-01-14T21:33:50 GMT" duration-ms="562" status="PASS">
+        <test-method signature="verifyloginInvalidUsernamePassword(java.lang.String,java.lang.String)[pri:4, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:38 GMT" name="verifyloginInvalidUsernamePassword" description="verifyloginInvalidUsernamePassword" data-provider="LoginProvider" finished-at="2026-01-14T22:04:38 GMT" duration-ms="667" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -289,7 +289,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyloginInvalidUsernamePassword -->
-        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T21:33:50 GMT" name="browserClose" finished-at="2026-01-14T21:33:50 GMT" duration-ms="182" status="PASS">
+        <test-method is-config="true" signature="browserClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@9816741]" started-at="2026-01-14T22:04:38 GMT" name="browserClose" finished-at="2026-01-14T22:04:39 GMT" duration-ms="186" status="PASS">
           <params>
             <param index="0">
               <value>

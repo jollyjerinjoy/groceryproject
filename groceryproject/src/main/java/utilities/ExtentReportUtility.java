@@ -6,41 +6,21 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReportUtility {
+
 	public static final ExtentReports extentReports = new ExtentReports();
 
 	public synchronized static ExtentReports createExtentReports() {
-		 
-	//String reportPath = System.getProperty("user.dir")
-   //           + "/target/extent-reports/extent-report.html";
-		
-		String reportDir = System.getProperty("user.dir")
-		        + "/target/extent-reports";
-
-		new File(reportDir).mkdirs();  // REQUIRED for Jenkins
-
-		String reportPath = reportDir + "/extent-report.html";
-
-		
-	  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath); //path
-//
-	    reporter1.config().setReportName("7RMart Project Automation Reportssz");
-
-	//        extentReports.attachReporter(reporter1);
-	        //extentReports.setSystemInfo("Organization", "Obsqura");
-	       // extentReports.setSystemInfo("Tester", "Jolly");
-	       // extentReports.setSystemInfo("Tester", "Greesma");
-		
-	//	ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
-	//	reporter.config().setReportName("7RMartss  Projects Report");
-		extentReports.attachReporter(reporter1);
-		extentReports.setSystemInfo("Organizations", "Obsquras");
-		extentReports.setSystemInfo("Name", "Jolly");
-		extentReports.setSystemInfo("Name", "Greesma");
+		ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
+		reporter.config().setReportName("7RMart  Project");
+		extentReports.attachReporter(reporter);
+		extentReports.setSystemInfo("Organization", "Obsqura");
+		extentReports.setSystemInfo("Name", "Aswani");
 		return extentReports;
-		
 	}
 
 }
+
+
 //We use Extent Report Utility to create and configure a single ExtentReports instance, 
 //which is consumed by a TestNG listener to log test execution status 
 //and generate an HTML report after execution.

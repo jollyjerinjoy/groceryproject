@@ -102,22 +102,7 @@ public class Listeners implements ITestListener {
 		ITestListener.super.onFinish(context);
 	    extent.flush();
 
-	    try {
-	        Path source = Paths.get(
-	            System.getProperty("user.dir")
-	            + "/target/extent-reports/extent-report.html");
-
-	        Path destination = Paths.get(
-	            System.getProperty("user.dir")
-	            + "/extent-reports/extent-report.html");
-
-	        Files.createDirectories(destination.getParent());
-	        Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
-
-	    } catch (IOException e) {
-	        e.printStackTrace();
-	    }
-	}
+	 	}
 	
 }
 
