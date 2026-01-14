@@ -7,6 +7,18 @@ public class ExtentReportUtility {
 	public static final ExtentReports extentReports = new ExtentReports();
 
 	public synchronized static ExtentReports createExtentReports() {
+		 
+		String reportPath = System.getProperty("user.dir")
+                + "/target/extent-reports/extent-report.html";
+		  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath);
+
+	        reporter1.config().setReportName("7RMart Project Automation Report");
+
+	        extentReports.attachReporter(reporter1);
+	        //extentReports.setSystemInfo("Organization", "Obsqura");
+	       // extentReports.setSystemInfo("Tester", "Jolly");
+	       // extentReports.setSystemInfo("Tester", "Greesma");
+		
 		ExtentSparkReporter reporter = new ExtentSparkReporter("./extent-reports/extent-report.html");
 		reporter.config().setReportName("7RMart  Projects");
 		extentReports.attachReporter(reporter);
@@ -14,6 +26,10 @@ public class ExtentReportUtility {
 		extentReports.setSystemInfo("Name", "Jolly");
 		extentReports.setSystemInfo("Name", "Greesma");
 		return extentReports;
+		
+		
+		
+		
 	}
 
 }

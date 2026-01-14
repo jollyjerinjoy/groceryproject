@@ -5,6 +5,8 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import constant.Constant;
+import generateReport.Listeners;
+import utilities.ExtentReportUtility;
 import utilities.ScreenshotUtility;
 import utilities.WaitUtility;
 
@@ -17,6 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 
@@ -64,6 +67,12 @@ public class Base {
 			ScreenshotUtility scrShot = new ScreenshotUtility(); // creating obj
 			scrShot.getScreenShot(driver, iTestResult.getName());
 		}
+	//ExtentReportUtility extent=new ExtentReportUtility();
+	//extent.createExtentReports();
+	//extent.flush();
+	//	Listeners ls=new Listeners();
+	//	ls.onFinish();
+		
 		driver.quit();
 	}
 
