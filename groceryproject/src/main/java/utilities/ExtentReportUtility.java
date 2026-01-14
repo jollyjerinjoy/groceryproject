@@ -1,5 +1,7 @@
 package utilities;
 
+import java.io.File;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
@@ -8,11 +10,20 @@ public class ExtentReportUtility {
 
 	public synchronized static ExtentReports createExtentReports() {
 		 
-	String reportPath = System.getProperty("user.dir")
-              + "/target/extent-reports/extent-report.html";
+	//String reportPath = System.getProperty("user.dir")
+   //           + "/target/extent-reports/extent-report.html";
+		
+		String reportDir = System.getProperty("user.dir")
+		        + "/target/extent-reports";
+
+		new File(reportDir).mkdirs();  // REQUIRED for Jenkins
+
+		String reportPath = reportDir + "/extent-report.html";
+
+		
 	  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath); //path
 //
-	    reporter1.config().setReportName("7RMart Project Automation Reportss");
+	    reporter1.config().setReportName("7RMart Project Automation Reportssz");
 
 	//        extentReports.attachReporter(reporter1);
 	        //extentReports.setSystemInfo("Organization", "Obsqura");
