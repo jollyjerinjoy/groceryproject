@@ -8,11 +8,11 @@ public class ExtentReportUtility {
 
 	public synchronized static ExtentReports createExtentReports() {
 		 
-	//	String reportPath = System.getProperty("user.dir")
-   //             + "/target/extent-reports/extent-report.html";
-	//	  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath); //path
+	String reportPath = System.getProperty("user.dir")
+              + "/target/extent-reports/extent-report.html";
+	  ExtentSparkReporter reporter1 = new ExtentSparkReporter(reportPath); //path
 //
-	 //       reporter1.config().setReportName("7RMart Project Automation Report");
+	    reporter1.config().setReportName("7RMart Project Automation Report");
 
 	//        extentReports.attachReporter(reporter1);
 	        //extentReports.setSystemInfo("Organization", "Obsqura");
